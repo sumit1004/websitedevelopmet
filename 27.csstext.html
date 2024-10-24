@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="head1">CSS Text Styling</h1>
+    <p>In this tutorial, we will cover some of the important text styling properties:</p>
+    <h1 class="head3">Text Decoration</h1>
+    <p>The text-decoration property adds various types of text decorations.
+        <br> There are four values for text-decoration:
+    </p>
+
+   
+<ul class="para">
+    <li><b>overline</b>: adds a line above the text.</li>
+    <li><b>underline</b>: adds a line below the text.</li>
+        <li><b>ine-through</b>l: Adds a line to the text.</li>
+            <li><b>none</b>: To remove decoration.</li>
+</ul>
+
+<div class="code"><pre id="code1"><div class="code2">&lt;----------------Syntax--------------&gt;</div>   selector {
+      text-decoration: value;
+  }<div class="code2">&lt;----------------Example--------------&gt;</div>
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            #p1 {text-decoration: overline;}
+            #p2 {text-decoration: underline;}
+            #p3 {text-decoration: line-through;}
+            #p4 {text-decoration: overline underline;}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p id="p1"&gt;text-decoration: overline&lt;/p&gt;
+        &lt;p id="p2"&gt;text-decoration: undrline&lt;/p&gt;
+        &lt;p id="p3"&gt;text-decoration: line-through&lt;/p&gt;
+        &lt;p id="p4"&gt;text-decoration: overline underline&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<h1 class="head3">Text Alignment</h1>
+<p>The text alignment property is used to align the text within the container. Container can be a div, section, etc.<br><br>There are four values for text alignment:</p>
+
+<ul class="para">
+    <li><b>left</b>: align the text to the left.</li>
+    <li><b>centre</b>: align the text to the centre.</li>
+    <li><b>right</b>: align the text to the right.</li>
+    <li><b>justify</b>: spread the text evenly between the left and right margins.</li>
+</ul>
+
+<div class="code"><pre id="code2"><div class="code2">&lt;--------------------Syntax-----------------&gt;</div>  selector{
+      text-align: value;
+  }
+  <div class="code2">&lt;--------------------Example-----------------&gt;</div>
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            #p1 {text-align: left;}
+            #p2 {text-align: right;}
+            #p3 {text-align: end;}
+            #p4 {text-align: justify;}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p id="p1"&gt;text-align: left&lt;/p&gt;
+        &lt;p id="p2"&gt;text-align: right&lt;/p&gt;
+        &lt;p id="p3"&gt;text-align: end&lt;/p&gt;
+        &lt;p id="p4"&gt;text-align: justify&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<h1 class="head3">Text Transformation</h1>
+<p>It transforms the text case.</p>
+<p>There are four values for text-transform:</p>
+<ul class="para">
+    <li><b>uppercase</b>: Transform text to uppercase (all capital letters).</li>
+    <li><b>lowercase</b>: transform text to lowercase (all small letters).</li>
+    <li><b>capitalise</b>: capitalise the first character from each word.</li>
+    <li><b>none</b>: To remove text transformation. </li>
+</ul>
+
+<div class="code"><pre id="code3"><div class="code2">&lt;----------------Syntax--------------------&gt;</div>  selector {
+      text-transform: value;
+  }<div class="code2">&lt;----------------Example--------------------&gt;</div>
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            #p1 {text-transform: uppercase;}
+            #p2 {text-transform: lowercase;}
+            #p3 {text-transform: capitalize;}
+            #p4 {text-transform: none;}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p id="p1"&gt;text-transform: uppercase&lt;/p&gt;
+        &lt;p id="p2"&gt;text-transform: lowercase&lt;/p&gt;
+        &lt;p id="p3"&gt;text-transform: capitalize&lt;/p&gt;
+        &lt;p id="p4"&gt;text-transform: none&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<h1 class="head3">Letter Spacing</h1>
+<p>The letter-spacing property allows to specify the spacing between each character in the text.<br>
+
+    The property values can be in pixels (px), em, rem, percentage (%), etc.<br>
+    
+    Example:</p>
+
+    <div class="code"><pre id="code4">
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;style&gt;
+                h1{
+                    letter-spacing: 5px;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;This is Letter-Spacing&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<h1 class="head3">Line Height</h1>
+<p>The line-height property controls the spacing between the two lines of text.<br>
+
+    Example:</p>
+
+
+    <div class="code"><pre id="code5">
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;style&gt;
+                h1{
+                    line-height: 3.5;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+            &lt;h1&gt;Developer and CodeWithHarry.com founder&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-cod="code5">Copy</button></div>
+
+<p>The value of 3.5 means that the space between lines will be 3.5 times the height of the font size.</p>
+
+<h1 class="head3">Text Shadow</h1>
+<p>The text-shadow property adds a shadow to the text.</p>
+
+<div class="code"><pre id="code6"><div class="code2">&lt;----------------Syntax--------------&gt;</div>
+    selector{
+        text-shadow:  Horizontal offset, vertical offset, blur radius, color;
+    }<div class="code2">&lt;----------------Example--------------&gt;</div>
+  &lt;html lang="en"&gt;
+   &lt;head&gt;
+    &lt;style&gt;
+        h1{
+        text-shadow: 2px 3px 4px red;
+        }
+    &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+   &lt;/body&gt;
+  &lt;/html&gt;</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<h1 class="head3">Text Overflow</h1>
+<p>The text-overflow property handles text that overflows its container.<br>
+
+    There are two values we can use with text-overflow:</p>
+
+    <ul class="para">
+        <li><b>ellipsis</b>: Truncates overflowing text with an ellipsis.
+        </li>
+        <li><b>clip</b>: clips the text without any visual indication.</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="next">
+
+        <a href="26.cssfont.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="26.cssfont.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="28.boxmodel.html" class="btn">Next</a></button>
+        <a href="28.boxmodel.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

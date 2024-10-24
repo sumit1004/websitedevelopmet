@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<h1 class="head2">CSS 2D Transform</h1>
+<p>This property allows the content to be restructured in ways like translate, rotate, scale or skew, etc.<br>
+As it is 2D, therefore the content is transformed into x and y dimensions.</p>
+
+<h1 class="head3">Translate</h1>
+<p>This property transforms the element’s position along x or y or both x and y directions.</p>
+
+<div class="code"><pre id="code1"><div class="code2">  &lt;---------Syntax----------&gt;</div>   transform: translate(x,y);</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<h1 class="head3">Rotate</h1>
+<p>This property rotates the content of the division either anticlockwise or clockwise acc to the degree of rotation. The values are taken in degree and on adding a negative sign the rotation becomes anticlockwise.</p>
+
+<div class="code"><pre id="code2"><div class="code2">  &lt;---------Syntax----------&gt;</div>   transform: rotate(-10deg);</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<h1 class="head3">Scale</h1>
+<p>This property rescales the width and height of the division in the ratio to the original dimensions. </p>
+
+<div class="code"><pre id="code3"><div class="code2">  &lt;---------Syntax----------&gt;</div>   transform: scale(1.4, 1.2);</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<p>This code will increase the width and height by 1.4 and 1.2 times the original respectively.<br>
+    <b>Note</b>: This property also changes the aspect ratio of the div, so has to be used accordingly.</p>
+
+    <h1 class="head3">Skew</h1>
+    <p>This property helps in adding a slant or skew to division. (Skew: A pair of lines neither intersecting nor parallel)</p>
+
+    <div class="code"><pre id="code4"><div class="code2">  &lt;---------Syntax----------&gt;</div>   transform: skew(10deg, 5deg);</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<p>You can also choose to give the values for skew in a particular axis by adding a postfix with skew: skewX.<br>
+    <b>Note</b>: The properties for 3D Transform are also identical; a new dimension z is included into it.</p>
+
+<h1 class="head2">CSS Transitions</h1>
+<p>Transitions control the ease of transformation from one style to another when we hover over that element. Basically, you can control the time take for any transformation to occur.</p>
+
+<div class="code"><pre id="code5"><div class="code2">  &lt;---------Syntax----------&gt;</div>   transition: width 3s;</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+<h1 class="head2">CSS Border Images</h1>
+<p>There are various ways to add a border to the text, or the element in CSS. (Ref: <a href="23.cssborder.html">CSS borders</a>)<br>
+But one can also use custom images as the border in the text. This will help you to use specially designed elements in the border of elements.</p>
+
+<div class="code"><pre id="code6"><div class="code2">  &lt;---------Syntax----------&gt;</div>   border-image: url(border.webp) 50%;</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<p>You can change the border width by tweaking the percentage values.</p>
+
+<h1 class="head2">CSS Gradients</h1>
+<p>CSS provides the styling of background colour with gradients. You can blend as many colours to create gradients.</p>
+<h1 class="head3">Linear Gradient</h1>
+<p>The gradient goes from top to bottom, and from left to right. To implement this gradient you need at least two colour stops. (could be more too)</p>
+
+<div class="code"><pre id="code7"><div class="code2">  &lt;---------Syntax----------&gt;</div>   background-image: linear-gradient(100deg, blue, orange, red);</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code7">Copy</button></div>
+
+<p>The degree controls the angle of the gradient, and by using comma-separated values you can add multiple colours for the background.<br>
+
+    <b>Note</b>: You can also use repeating-linear-gradient to keep repeating the background for the whole screen.</p>
+
+    <h1 class="head3">Radial Gradient</h1>
+    <p>The gradient here is added from the centre focal point. The colour added first marks the centre of the gradient and keeps expanding circularly</p>
+
+    <div class="code"><pre id="code8"><div class="code2">  &lt;---------Syntax----------&gt;</div>   background-image: radial-gradient(blue, orange, red);</pre></div>
+
+    <div class="copytext"><button class="copy-btn" data-code="code8">Copy</button></div> 
+
+    <p>This is the default output but you can regulate the amount of each colour by adding a percentage with the colours, like radial-gradient(blue 20%, orange, red);<br>
+     The default shape of the gradient is an ellipse, but you can set it to circle too. Just add a circle ahead of the colours, separated by a comma.</p>
+
+<h1 class="head3">Conic Gradient</h1>
+<p>The colour gradient rotates around a specific point in the form of a cone. By default, the degree of the cone is taken as zero and starts from the centre.</p>
+
+<div class="code"><pre id="code9"><div class="code2">  &lt;---------Syntax----------&gt;</div>   background-image: conic-gradient(blue, orange, red);</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code9">Copy</button></div> 
+
+<p>Inherit property allows the content values to be taken directly from the parent element. This can be applied to all of the CSS properties individually or using “all” at once.</p>
+
+<div class="code"><pre id="code10">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Css Inherit&lt;/title&gt;
+        &lt;style&gt;
+            span {
+                color: purple;
+                border: 3px solid black;
+            }
+            .inherit span{ 
+                color: inherit;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;CSS Inherit&lt;/h1&gt;
+        &lt;div&gt;
+            Here is &lt;span&gt;a span element&lt;/span>&gt;which is purple, as span elements are set to be
+        &lt;/div&gt;
+        &lt;div class="inherit" style="color: blue;"&gt;
+            Here is &lt;span&gt;a span element&lt;/span&gt; which is Blue, because it inherits from the parent element
+        &lt;/div&gt;
+        &lt;div style="color: red;"&gt;
+            Here is &lt;span&gt;a span element&lt;/span&gt; which is purple, as span elements are to be.
+        &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    <div class="code2">    //   Try this code to see how it's work</div>
+</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code10">Copy</button></div>
+
+
+
+
+    <div class="next">
+
+        <a href="36.cssflexbox.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="36.cssflexbox.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="38.cssshadow.html" class="btn">Next</a></button>
+        <a href="38.cssshadow.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

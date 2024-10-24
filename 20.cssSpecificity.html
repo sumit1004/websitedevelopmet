@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="head2">CSS Specificity</h1>
+    <p>CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or
+        multiple CSS rules.
+
+        <br>It is a value or weight assigned to a CSS selector. The higher the specificity, the more precedence the
+        selector has.<br>
+
+        Let's consider the following code
+    </p>
+
+    <div class="code">
+        <pre id="code1"> &lt;html&gt;
+   &lt;head&gt;
+        &lt;style&gt;
+               *{
+                   color: gray;
+                }
+               #title{
+                   color: red;
+                }
+               .h1{
+                   color: blue;
+                  }   
+                h1{
+                   color: pink;
+                 }
+        &lt;/style&gt;
+            
+      &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 id="title" class="h1" style="color:purple"&gt;CSS Specificity&lt;/h1&gt;
+    &lt;/body&gt;
+   &lt;/html&gt;</pre>
+</div>
+<div class="copytext">
+    <button class="copy-btn" data-code="code1">Copy </button></div>
+
+    <p>Here the question is, what color will h1 be assigned to? This is calculated based on the selector's components
+        which we will discussed in this tutorial.</p>
+
+    <h1 class="head3">The Cascade Algorithm</h1>
+    <p>CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules
+        apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be
+        purple.<br>
+
+        Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The
+        cascade algorithm has 4 distinct stages.</p>
+
+    <ol>
+        <li><b>Position and order of appearance</b>: the order in which your CSS rules appear</li>
+        <li><b>Specificity</b>: an algorithm that determines which CSS selector has the strongest match</li>
+        <li><b>Origin</b>: the order in which CSS appears and where it comes from, whether that is a browser style, CSS
+            from a
+            browser extension, or your authored CSS</li>
+        <li><b>Importance</b>: some CSS rules are weighted more heavily than others, especially with the !important rule
+            type
+            Lets look into all these one by one</li>
+    </ol>
+    <h1 class="head3">Effect of Position</h1>
+
+    <p>If there are two rules that have selectors of identical specificity, the last one to be declared won. In an HTML
+        page, you can add styles in different ways: through a &lt;link&gt; tag, a &lt;style&gt; tag, or directly in the
+        element's style attribute. If you have one &lt;link&gt; tag at the top of your page and another at the bottom,
+        the styles from the bottom one will be used. The same goes for &lt;style&gt; tags; the ones lower down on the
+        page take priority.<br>
+
+        An inline style attribute with CSS declared in it will override all other CSS, regardless of its position,
+        unless a declaration has !important defined.<br>
+
+        If the browser doesn't support a property, it is ignored!</p>
+
+    <h1 class="head3">Specificity</h1>
+
+    <p>CSS specificity determines which style rules get applied to an element when there are conflicts. Higher
+        specificity means the style will be used. It's calculated based on a point system involving inline styles, IDs,
+        classes, and tag names.</p>
+
+    <h1 class="head3">Inline Styles</h1>
+    <p>Inline styles have the highest specificity and will always override styles if other selector(s) are also defined.
+    </p>
+
+
+    <div class="code">
+        
+        <pre id="code2">   &lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            *{
+                color: gray;
+            }
+            #title{
+                color: red;
+            }
+            .h1{
+                color: blue;
+            }
+            h1{
+                color: pink;
+            }
+        &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+                &lt;h1 id="title" class="h1" style="color:purple"&gt;Inline Styles&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+        </pre>
+     </div>
+     <div class="copytext">
+        <button class="copy-btn" data-code="code2">Copy</button></div>
+
+<p>Here, you can see that the color: purple is applied to the h1 tag.</p>
+<h1 class="head3">ID Selector</h1>
+<p>The ID selector also has high specificity but comes after the inline Style specificity. So, if we have an ID and other selectors except the inline style, then the element will take the ID selector properties and values.</p>
+
+<div class="code">
+   
+    <pre id="code3">  &lt;head&gt;
+        &lt;style&gt;
+            *{
+                color: gray;
+            }
+            #title{
+                color: red;
+            }
+            .h1{
+                color: blue;
+            }
+            h1{
+                color: pink;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 id="title" class="h1"&gt;ID Selector&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+ </div>
+ <div class="copytext">
+    <button class="copy-btn" data-code="code3">Copy</button></div>
+
+<h1 class="head3">Class and Attribute Selectors</h1>
+<p>Class selectors and attribute selectors have moderate specificity. Suppose the element has a class or attribute selector and not an inline style or ID selector, then the element will take properties and values from the class or attribute selector.</p>
+
+<div class="code">
+    <pre id="code4">  &lt;head&gt;
+        &lt;style&gt;
+            *{
+                color: gray;
+            }
+            #title{
+                color: red;
+            }
+            .h1{
+                color: blue;
+            }
+            h1{
+                color: pink;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 id="title" class="h1"&gt;Class and Attribute Selectors&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code4">Copy </button></div>
+
+                <h1 class="head3">Element Selector:</h1>
+<p>Element selectors like &lt;p&gt;, &lt;div&gt;, &lt;a&gt;, etc. have low specificity.</p>
+
+<div class="code">
+    <pre id="code5">  &lt;head&gt;
+    &lt;style&gt;
+        *{
+            color: gray;
+        }
+        h1{
+            color: red;
+        }
+    &lt;/style&gt;
+    
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 class="h1"&gt;element selector&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre>
+</div>
+<div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+<h1 class="head3">Universal Selector:</h1>
+<p>Universal selectors (*) and combining selectors like not, first-child, and last-child have the lowest specificity.</p>
+
+<div class="code">
+    <pre id="code6">  &lt;head&gt;
+        &lt;style&gt;
+            *{
+                color: gray;
+            }
+        &lt;/style&gt;
+    
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 class="h1"&gt;Universal Selector&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre>
+</div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+<p>So, the order of specificity is:<br>
+
+    <b>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</b></p>
+    <h1 class="head3">Specificity Calculation</h1>
+    <p>To calculate specificity, assign a value to each part of the selector:</p>
+    <ul class="para">
+        <li>Universal Selector: 0</li>
+        <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+                <li>ID selectors: 100</li>
+                    <li>Inline styles: 1000</li>
+    </ul>
+    <p>Then, add up the values of all the parts in the selector.<br>
+
+        Here is an example </p>
+
+<div class="code">
+    <pre id="copy7">   &lt;h1 id="title" class="h1"&gt;Order of specificity&lt;/h1&gt;</pre>
+</div>
+<div class="copytext"><button class="copy-btn" data-code="copy7">Copy</button></div>
+
+<p>Here, the specificity value will be 111 because ID has a specificity of 100, the class has a specificity of 10, and the h1 element has a specificity of 1.<br>
+
+    In the case of a specificity tie, the rule that appears last in the CSS is applied.</p>
+
+    <h1 class="head3">Importance</h1>
+    <p>The !important flag in CSS is used to give a particular style rule the highest level of importance, overriding any other competing styles. When you add !important to a CSS rule, it will take precedence over other rules affecting the same element, regardless of their specificity. For example, if you have:</p>
+
+    <div class="code">
+        <pre id="copy8">  p {
+    color: red !important;
+    }
+          
+  p {
+    color: blue;
+    }</pre>
+    </div>
+<div class="copytext"><button class="copy-btn" data-code="copy8">Copy</button></div>
+
+<p>The text in the &lt;p&gt; element will be red, not blue, because the !important flag makes that rule more important.<br>
+
+    an !important at the end of a CSS value gets a specificity score of 10,000 points. This is the highest specificity that one individual item can get.<br>
+    
+    However, it's generally best to use !important sparingly, as it can make debugging and maintaining your stylesheets more complicated. It can override styles in ways that are hard to trace, leading to unexpected results.</p>
+
+
+    <div class="next">
+
+        <a href="19.cssselector.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="19.cssselector.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="21.csscolor.html" class="btn">Next</a></button>
+        <a href="21.csscolor.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+   
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

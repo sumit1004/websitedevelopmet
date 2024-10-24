@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Code</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="navi">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="1.index.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-html5"></ion-icon></span>
+                            <span class="text">HTML</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="18.cssway.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-css3"></ion-icon></span>
+                            <span class="text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="41.jsintro.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-nodejs"></ion-icon></span>
+                            <span class="text">JS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon
+                                    name="apps-outline"></ion-icon></span>
+                            <span class="text">ABOUT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  
+<h1 class="head2">HTML Inline Elements</h1>
+<p class="para3">
+Inline Elements don't start on a new line. It only takes the width required to cover the content.
+<br>HTML elements are generally divided into two categories: <b>Block-level</b> and <b>Inline</b> elements.</p>
+<p class="para4">Block-Level Elements</p>
+<nav class="seven">
+    <div class="red">block level  </div>
+    <div class="green"> blocklevel</div>
+    <div class="blue"> block</div>
+</nav>
+
+<p class="para4">Inline Elements</p>
+<nav class="seven1">
+    <div class="red1">block level  </div>
+    <div class="green1"> blocklevel</div>
+    <div class="blue1"> block</div>
+</nav>
+<p class="para3">No matter what the width is, block elements will always start on a new line and take up the full available width of their container by default. This means they essentially claim all the horizontal space for themselves, pushing any content that comes after them to a new line. But the inline elements will fit snugly within the flow of other elements, taking up only as much width as their content requires.</p>
+<h1 class="head4">What are Inline Elements?</h1>
+<p class="para3">Inline elements do not start on a new line and only take up as much width as necessary. They are part of the flow within other elements.
+<br>Inline elements can contain other inline elements, but they generally should not contain block-level elements. For example, you could nest a &lt;strong&gt; (strong emphasis) element within a &lt;span&gt; (a generic inline container) element, like so:</p>
+
+
+<div class="code">
+    <pre id="code1">   &lt;span&gt;This is &lt;strong&gt;important</strong> text.&lt;/span&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code1">Copy </button></div>
+
+
+<p class="para3">However, placing a block-level element like a &lt;div&gt; or &lt;p> inside an inline element like &lt;span&gt; or &lt;a&gt; is typically considered incorrect HTML and could lead to unexpected behavior in terms of layout and styling.</p>
+
+
+<div class="code"><pre id="code2"> <nav class="code6">  &lt;--This is generally considered incorrect --&gt; </nav>   &lt;span&gt;This is &lt;div&gt;not recommended&lt;/div&gt; text.&lt;/span&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code2">Copy </button></div>
+
+
+
+
+<h1 class="head4">Common Inline Elements</h1>
+<ul class="para2">
+    <li>&lt;span&gt;: A generic inline container for text</li>
+        <li>&lt;a&gt;: Defines a hyperlink</li>
+            <li>&lt;strong&gt;: Defines important text</li>
+                <li>&lt;em&gt;: Defines emphasized text</li>
+                    <li>&lt;img&gt;: Embeds an image</li>
+                    <li>&lt;input&gt;: Defines an input control </li>
+                   </ul>
+                   <h1 class="head4">Styling Inline Elements</h1>
+                   <p class="para3">You can use CSS to style inline elements. However, some properties like width and height may not apply.
+
+                <br>Here is an exhaustive list of the most used <b>Inline Elements</b>:</p>
+<ul class="para2">
+        <li>&lt;a&gt;</li>
+        <li>&lt;abbr&gt;</li>
+        <li> &lt;acronym&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li> &lt;br&gt;</li>
+        <li> &lt;big&gt;</li>
+        <li>&lt;bdo&gt;</li>
+        <li> &lt;b&gt;</li>
+        <li> &lt;cite&gt;</li>
+        <li> &lt;code&gt;</li>
+        <li> &lt;dfn&gt;</li>
+        <li> &lt;i&gt;</li>
+        <li> &lt;em&gt;</li>
+        <li> &lt;img&gt;</li>
+        <li> &lt;input&gt;</li>
+        <li> &lt;kbd&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li> &lt;map&gt;</li>
+        <li>&lt;object&gt;</li>
+        <li>&lt;output&gt;</li>
+        <li>&lt;tt&gt;</li>
+        <li>&lt;time&gt;</li>
+        <li> &lt;samp&gt;</li>
+       <li> &lt;script&gt;</li>
+       <li> &lt;select&gt;</li>
+        <li>&lt;small&gt;</li>
+        <li>&lt;span&gt;</li>
+        <li>&lt;strong&gt;</li>
+        <li>&lt;sub&gt;</li>
+        <li>&lt;sup&gt;</li>
+        <li>&lt;textarea&gt;</li>
+</ul>
+
+<h1 class="head2">HTML Block Elements</h1>
+<p class="para3">You already know about HTML inline elements. All HTML tags have specific display behavior: they are either block-level elements or inline elements.</p>
+
+<h1 class="head3">What are Block-level Elements?</h1>
+<p class="para3">Block-level elements are those that start on a new line and take up the entire width of their container by default. They essentially claim all the horizontal space for themselves, pushing any content that comes after them to a new line.</p>
+
+<h1 class="head4">Characteristics of Block-level Elements:</h1>
+<ul class="para2">
+    <li>Always start on a new line.</li>
+    <li>Take up the full width available.</li>
+    <li>Width and height can be controlled via CSS.></li>
+    <li>Can contain other block-level as well as inline elements.</li>
+</ul>
+<h1 class="head4">Common Block-level Elements:</h1>
+<ul class="para2">
+        <li>&lt;h1>,&lt;h2>,&lt;h3>,&lt;h4>,&lt;h5>,&lt;h6> - Headings</li>
+        <li>&lt;p> - Paragraphs</li>
+        <li>&lt;hr> - Horizontal rule</li>
+        <li>&lt;address> - Address information</li>
+        <li>&lt;article> - Article content</li>
+        <li>&lt;aside> - Sidebar content</li>
+        <li>&lt;blockquote> - Block quotations</li>
+        <li>&lt;canvas> - Drawing area</li>
+        <li>&lt;dd> - Description in a description list</li>
+        <li>&lt;div> - Generic container</li>
+        <li>&lt;dl> - Description list</li>
+        <li>&lt;dt> - Term in a description list</li>
+        <li>&lt;fieldset> - Group of related form elements</li>
+        <li>&lt;figcaption> - Caption for a figure</li>
+        <li>&lt;figure> - Image or media with a caption</li>
+        <li>&lt;footer> - Footer of a section or page</li>
+        <li>&lt;form> - HTML form</li>
+        <li>&lt;header> - Header of a section or page</li>
+        <li>&lt;li> - List item</li>
+        <li>&lt;main> - Main content of a document</li>
+        <li>&lt;nav> - Navigation links</li>
+        <li>&lt;noscript> - Alternate content when JavaScript is not enabled</li>
+        <li>&lt;ol> - Ordered list</li>
+        <li>&lt;ul> - Unordered list</li>
+        <li>&lt;pre> - Preformatted text</li>
+        <li>&lt;section> - Standalone section in a document</li>
+        <li>&lt;table> - Table</li>
+        <li>&lt;video> - Video content</li>
+</ul>
+
+
+
+<div class="next">
+
+    <a href="10.anchortag.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+     <button id="backword"><a
+             href="10.anchortag.html" class="btn">Previous</a></button>
+
+     <button id="forward"><a href="12.list.html" class="btn">Next</a></button>
+     <a href="12.list.html">
+         <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+ </div>
+ <footer>
+    <nav class="foot">
+        <h1 class="direct">Direct links</h1>
+        <ul class="link">
+            <li><a href="1.index.html" class="page">Introduction</a></li>
+            <li><a href="2.tags.html" class="page">Html Tags</a></li>
+            <li><a href="3.htmlelement.html" class="page">Html Elements</a></li>
+            <li><a href="4.htmlattribute.html" class="page">Html Attribute</a></li>
+            <li><a href="5.comments.html" class="page">Html Comments</a></li>
+            <li><a href="6.id&classes.html" class="page">Id & Classes</a></li>
+        </ul>
+        <ul class="link">
+            <li><a href="7.skeletal .html" class="page">Skeletal Tag</a></li>
+            <li><a href="8.headingtag.html" class="page">Heading Tags</a></li>
+            <li><a href="9.paragraphtags.html" class="page">Paragraph Tag</a></li>
+            <li><a href="10.anchortag.html" class="page">Anchor Tag</a></li>
+            <li><a href="10.anchortag.html" class="page">Image Tag</a></li>
+            <li><a href="10.anchortag.html" class="page">Pre Tag </a></li>
+        </ul>
+        <ul class="link">
+            <li><a href="11.inlineblock.html" class="page">Inline Element</a></li>
+            <li><a href="11.inlineblock.html" class="page">Block Element</a></li>
+            <li><a href="12.list.html" class="page">Html Lists</a></li>
+            <li><a href="13.table.html" class="page">Table Tag</a></li>
+            <li><a href="14.form.html" class="page">Form Tag</a></li>
+            <li><a href="15.textarea.html" class="page">Textarea & Select </a></li>
+        </ul>
+        <ul class="link">
+            <li><a href="16.headelement.html" class="page">Meta Tag</a></li>
+            <li><a href="16.headelement.html" class="page">Link & Script tags</a></li>
+            <li><a href="17.video.html" class="page">Video tag</a></li>
+            <li><a href="17.video.html" class="page">Audio Tag</a></li>
+            <li><a href="17.video.html" class="page">Svg Tag</a></li>
+            <li><a href="17.video.html" class="page">Iframe Tag</a></li>
+        </ul>
+        <ul class="links">
+            <h2>follow me</h2>
+            <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                    <p class="media">Instagram</p>
+                </span></a>
+            </li>
+            <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <p class="media">Youtube</p>
+                </span></a>
+            </li>
+            <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <p class="media">Linkedin</p>
+                </span></a>
+            </li>
+            <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbPWMgZbXXHWWvJQmCgfMZNwQvqzthtXHXtpDQwPcpRJVKdlXrzbGkFDglHcwmfCtBL" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p class="media">sumitkumar042006@gmail.com</p>
+                </span></a>
+            </li>
+        </ul>
+    </nav>
+    </footer>
+    
+ <script>
+         const list = document.querySelectorAll('.list');
+         function activeLink(){
+             list.forEach((item) =>
+         item.classList.remove('active'));
+         this.classList.add('active');
+         }
+         list.forEach((item) =>
+         item.addEventListener('click',activeLink));
+
+         document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.copy-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const codeId = button.getAttribute('data-code');
+            const codeElement = document.getElementById(codeId);
+            const code = codeElement.textContent;
+
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    });
+});
+     </script>
+
+ <script type="module"
+     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule
+     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

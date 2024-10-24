@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+<h1 class="head2">CSS Animations</h1>
+<p>CSS Animations help to animate elements from one frame to another. Controlling various CSS properties helps in changing the animation style and time without having the need to use JavaScript for the same.<br>
+    The most basic way to do so is by using “from” and “to”.</p>
+
+<div class="code"><pre id="code1">
+    @keyframes demo {
+        from {
+            background-color: red;
+        }
+        to {
+            background-color: blue;
+        }
+    }
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<p>The animation here would start with the background colour as red and will turn blue gradually. To use this animation we simply add it to the div stylesheet rule.
+<br>
+ 
+This is the most basic way to do CSS animations, but now let’s look into the properties for advanced animation styling.</p>
+
+<h1 class="head3">1. Animation Name</h1>
+<p>To identify the animation we assign it with the name. In the above example the name was demo. So, we will add the attribute animation name in the div element.</p>
+
+<div class="code"><pre id="code2"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>    div{animation-name: demo;}</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<h1 class="head3">2. Key Frames</h1>
+
+<p>Keyframes define at what % of the animation, which stylesheet rules should be used. The value of keyframes varies from 0% to 100%.
+<br>
+ To add keyframes use the % operator with the value inside the keyframes. More keyframes mean smoother animation.</p>
+
+ <div class="code"><pre id="code3">
+    &lt;style&gt;
+    @keyframes demo {
+        0% {
+            background-color: red;
+        }
+        25% {
+            background-color: yellow;
+        }
+        50% {
+            background-color: gray;
+        }
+        100% {
+            background-color: white;
+        }
+    }
+&lt;/style&gt;
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<h1 class="head3">3. Looping Animations</h1>
+<p>By default the animation runs only one time on the website but you can choose to loop the animation by using the “animation-iteration-count” property. </p>
+
+<div class="code"><pre id="code4"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>
+     {animation-iteration-count: value;}</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<p>Just assign the values to the property and the number of times the animation will run.<br>
+To keep the animation running continuously we keep the value as “infinite”.</p>
+
+<h1 class="head3">4. Animation Durations</h1>
+<p>Animation Duration is the key property to start the animations. By default, the animation duration is 0 sec, which means the animation won’t start.<br>
+ So, to start the animation we will assign the value to the animation duration. </p>
+
+<div class="code"><pre id="code5"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>
+     animation-duration: value(in sec);</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+<h1 class="head3">5. Other Properties</h1>
+<h1 class="head3">Animation Delay </h1>
+<p>Delays the start of animation on the website. Adding a negative value to delay will make the animation run even before the website is loaded.</p>
+
+<div class="code"><pre id="code6"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>
+    {animation-delay: -2s;}</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<h1 class="head3">Animation Direction</h1>
+<p>This property defines the order of the animation. Whether it should be played forward, reverse or alternatively. The values it takes is: </p>
+
+<ul class="para">
+    <li>normal: the default state of forward animation.</li>
+    <li>reverse: plays the animation in the reverse direction.</li>
+    <li>alternate: forward animation and then backward.</li>
+    <li>alternate-reverse: reverse animation and then forward.</li>
+</ul>
+
+<div class="code"><pre id="code7"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>
+    {animation-direction: value;}</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code7">Copy</button></div>
+
+<h1 class="head3">Animation Timing Function</h1>
+<p>It defines the speed curve for the animation. This property adds ease to our animation and can have the following values: ease, linear, ease-in, ease-out, and ease-in-out.<br>
+
+    As the properties are self-explanatory, you can see the output accordingly.</p>
+
+    <div class="code"><pre id="code8"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>
+        animation-timing-function: value;</pre></div>
+    <div class="copytext"><button class="copy-btn" data-code="code8">Copy</button></div>
+
+    <h1 class="head3">Animation Fill Mode</h1>
+    <p>This property defines the style of the element when the animation is either stopped or about to start. The value it takes is none(default state), forwards(value set by the last keyframe), backwards(value of the first keyframe) or both.</p>
+
+    <div class="code"><pre id="code9"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>
+       animation-fill-mode: value;</pre></div>
+    <div class="copytext"><button class="copy-btn" data-code="code9">Copy</button></div>
+
+<h1 class="head3">Animation ShortHand</h1>
+<p>We’ve seen shorthand properties for other CSS properties and the same can be applied to Animation too.</p>
+
+<div class="code"><pre id="code10"><div class="code2">&lt;-------------------Syntax----------------&gt;</div>
+    animation: demo 5s ease-in 1s infinite normal both;</pre></div>
+ <div class="copytext"><button class="copy-btn" data-code="code10">Copy</button></div>
+
+
+
+
+
+    <div class="next">
+
+        <a href="38.cssshadow.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="38.cssshadow.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="40.cssextra.html" class="btn">Next</a></button>
+        <a href="40.cssextra.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

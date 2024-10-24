@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="head1">CSS Overflow</h1>
+    <p>Sometimes the content shown is too large to be visible in a single line or division of the website. So, to avoid loss of that information we can use overflow property.</p>
+
+<h1 class="head3">Overflow Visible</h1>
+<p>This makes the whole text visible irrespective of the container size.</p>
+
+<h1 class="head3">Overflow Hidden</h1>
+<p>It hides the content which doesn’t fit the box.</p>
+
+<h1 class="head3">Overflow Scroll</h1>
+<p>It adds an automatic scroller in the container so for the seeing the content it can be scrolled without affecting the container dimensions.</p>
+
+<h1 class="head3">Overflow Auto</h1>
+<p>It is quite similar to scroll but the scroller is only added when the content starts getting out of the container. Mostly this option is used to avoid unnecessary scroll bars if the content already is within the content dimensions.</p>
+
+<div class="code"><pre id="code1"><div class="code2">&lt;---------------Syntax----------------&gt;</div>
+   selector {
+        overflow: visible; | hidden; | scroll; | auto;
+   }</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<h1 class="head1">CSS Float</h1>
+<p>Just like how “wrap through” works in MS Word, the float property allows the balance between text and the image shown beside it. </p>
+
+<div class="code"><pre id="code2"><div class="code2">&lt;---------------Syntax----------------&gt;</div>
+    selector {
+         float: right; | left;
+    }</pre></div>
+ <div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+ 
+ <h1 class="head2">CSS !important</h1>
+ <p>As we know CSS follows a style sheet sequence to decide the order of rules to be applied on the website, and inline CSS overrides all the rules of the internal and external stylesheet. <br>
+    But if we want a particular rule to be prioritised at all costs in the stylesheet we can use !important tag with it.
+</p>
+<div class="code"><pre id="code3">
+    {property:value !important;}</pre></div>
+ <div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<h1 class="head2">CSS Maths Functions</h1>
+<p>Maths functions helps us in fighting dimensions of elements or screen autonomously and thus helps in the responsiveness of a website.</p>
+
+<h1 class="head3">Calc() Function</h1>
+<p>Calculates the value generally width of a particular property.<br>
+
+    Example:</p>
+
+    <div class="code"><pre id="code4">
+        width: calc(100%-20px);</pre></div>
+     <div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+<p>This function will automatically subtract 20px from whatever is the 100% width of that container on the website. This way you can space your elements well without hassles.</p>
+
+<h1 class="head3">Max & Min Functions</h1>
+<p>This function takes two parameters and gives the result out of one accordingly.<br>
+
+    Example:</p>
+    <div class="code"><pre id="code5">
+        width: max(50px, 50%);</pre></div>
+     <div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div> 
+<p>Out of these two whichever would be greater, would be assigned as a value to the width; vice versa happens for the minimum function.</p>
+
+<h1 class="head2">CSS Size</h1>
+<p>We’ve seen various units in CSS so far used for many different purposes; we did hit and trial to find the correct dimensions of that unit for our website. 
+<br>But now let’s understand how units work in CSS. </p>
+<h1 class="head3">Absolute Units.</h1>
+
+<ol>
+    <li>cm - centimetres (1 cm = 37.8 px)</li>
+    <li>mm - millimetres</li>
+    <li>in - inches (1 in = 96 px = 2.54cm)</li>
+    <li>pt - points (1pt = 1/72th of 1 in)</li>
+    <li>pc - picas (1pc = 1/6th of 1 in)</li>
+    <li>px - pixel (1px = 1/96th of 1 in)</li>
+
+</ol>
+<p>Generally we only use pixels to set dimensions of an element.</p>
+
+<h1 class="head3">Relative Units</h1>
+<ol>
+    <li>em - Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the current font size.</li>
+    <li>ex - Relative to X height of the existing font</li>
+    <li>ch - Relative to the width/ radius of the character “0”.</li>
+    <li>rem - Relative to the font size of the root element.</li>
+    <li>vw - Relative to 1% of the width of the viewport.(Viewport is the area of the website visible to the user.)</li>
+    <li>vh -  Relative to 1% of the height of the viewport</li>
+    <li>% - Relative to the parent element’s size.</li>
+</ol>
+<p>Apart from this some of the other metrics used in CSS are-</p>
+<ol>
+    <li>Opacity: Ranges from 0 to 1</li>
+    <li>RGB & RGBA values: 0 to 255</li>
+    <li>HSL & HSLA values: 0 to 360</li>
+</ol>
+
+
+
+
+
+
+    <div class="next">
+
+        <a href="32.cssother.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="32.cssother.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="34.cssposition.html" class="btn">Next</a></button>
+        <a href="34.cssposition.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

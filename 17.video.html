@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Code</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="navi">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="1.index.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-html5"></ion-icon></span>
+                            <span class="text">HTML</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="18.cssway.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-css3"></ion-icon></span>
+                            <span class="text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="41.jsintro.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-nodejs"></ion-icon></span>
+                            <span class="text">JS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon
+                                    name="apps-outline"></ion-icon></span>
+                            <span class="text">ABOUT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="head2">Video & Audio Tags
+        </h1>
+        <h1 class="head3">The &lt;video&gt; Tag
+        </h1>
+        <p class="para3">The &lt;video&gt; tag is used to embed video files in an HTML document. It supports multiple attributes to control the video playback.<br> Example usage:</p>
+      
+        <div class="code">
+            <pre id="code1">   &lt;video src="video.mp4" controls&gt;&lt;/video&gt;</pre></div>
+            <div class="copytext">
+                        <button class="copy-btn" data-code="code1">Copy </button></div>
+
+
+
+<h1 class="head3">Attributes for &lt;video&gt; Tag
+</h1>
+
+<ul class="para2">
+    <li><b>src</b>: Specifies the path to the video file.</li>
+    <li><b>controls</b>: Adds video controls, like play, pause, and volume.</li>
+    <li><b>autoplay</b>: Automatically starts playing the video when the page loads.</li>
+    <li><b>loop</b>: Repeats the video once it ends.</li>
+    <li><b> muted</b>: Mutes the video by default.</li>
+    <li><b>poster</b>: Specifies an image to be displayed before the video starts playing.</li>
+    <li><b>width</b> and <b>height</b>: Specifies the dimensions of the video.</li>
+</ul>
+
+<h1 class="head3">The &lt;audio&gt; Tag
+</h1>
+<p class="para3">The &lt;audio&gt; tag is used to embed audio files in an HTML document. It also supports multiple attributes for control.<br>Example usage:</p>
+
+<div class="code">
+    <pre id="code2">   &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code2">Copy </button></div>
+
+
+<h1 class="head3">Attributes for &lt;audio&gt; Tag
+</h1>
+
+<ul class="para2">
+    <li><b>src</b>: Specifies the path to the audio file.</li>
+    <li><b>controls</b>: Adds audio controls, like play, pause, and volume.</li>
+    <li><b>autoplay</b>: Automatically starts playing the audio when the page loads.</li>
+    <li><b>loop</b>: Repeats the audio once it ends.</li>
+    <li><b>muted</b>: Mutes the audio by default.</li>
+    <li><b>preload</b>: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none').</li>
+</ul>
+
+<p class="para3">The "preload" attribute can have the following values:</p>
+<ol class="para2">
+    <li><b>none</b>: This is the default value. It indicates that the browser should not preload the audio file at all. The audio file will only start downloading when the user initiates playback.</li>
+    <li><b>metadata</b>: This value tells the browser to preload only the metadata of the audio file, such as its duration and basic information about the audio. This can be useful if you want to display the audio duration to the user without fully loading the audio data.</li>
+    <li><b>auto</b>: This value instructs the browser to preload the entire audio file as much as possible without delaying the loading of other important page content. The browser will try to load the audio file in the background so that it's ready to play when the user decides to start it.</li>
+</ol>
+
+<h1 class="head2">SVG in HTML
+</h1>
+<p class="para3">Scalable Vector Graphics (SVG) has become an indispensable part of modern web development. SVG enables developers to create high-quality, scalable graphics that look crisp at any size or resolution. In this blog post, we'll explore the basics of using SVG in HTML, its benefits, and some practical examples.</p>
+
+<h1 class="head3">What is SVG?
+</h1>
+<p class="para3">SVG stands for Scalable Vector Graphics. Unlike raster images like PNGs or JPGs, SVGs are not pixel-based. They're composed of vectors—mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality.</p>
+
+<h1 class="head3">Why Use SVG?
+</h1>
+<h1 class="head4">Scalability
+</h1>
+<p class="para3">SVG images can be scaled indefinitely without losing quality, which is ideal for responsive web design.</p>
+
+<h1 class="head4">File Size</h1>
+<p class="para3">SVG files are often smaller than their raster counterparts, especially for simple shapes and icons.</p>
+
+<h1 class="head4">Flexibility
+</h1>
+<p class="para3">SVGs can be styled, animated, and manipulated using CSS and JavaScript.</p>
+
+<h1 class="head3">How to Embed SVG in HTML</h1>
+<p class="para3">SVG can be embedded in HTML in several ways:</p>
+<ol class="para3">
+    <li>Inline SVG: Directly writing the SVG XML code within HTML.</li>
+    <li>Using an <img> tag: Point the src attribute to an SVG file.</li>
+    <li>Using CSS: Setting SVG as a background image in a CSS file.</li>
+</ol>
+
+<h1 class="head3">Inline SVG Example
+</h1>
+
+<div class="code">
+    <pre id="code3">   &lt;svg height="100" width="100"&gt;
+        &lt;ircle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;
+     &lt;/svg&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code3">Copy </button></div>
+
+
+
+   <h1 class="head4">&lt;img&gt; Tag Example
+   </h1>
+
+   <div class="code">
+    <pre id="code4">  &lt;img src="image.svg" alt="Sample SVG"&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code4">Copy </button></div>
+
+
+   <h1 class="head4">CSS Background Example
+</h1>
+
+<div class="code">
+    <pre id="code5">   .background {
+        background-image: url('image.svg');
+        }</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code5">Copy </button></div>
+
+
+
+<h1 class="head4">SVG Attributes
+</h1>
+<p class="para3">SVG comes with a set of attributes to control its behavior:</p>
+<ul class="para2">
+    <li>width and height: To set the dimensions.
+        <li>viewBox: To set the coordinate system.</li>
+    </li>
+    <li>fill and stroke: To set the colors.</li>
+</ul>
+
+<h1 class="head4">Practical Examples
+</h1>
+<h1 class="head4">Creating a Simple Icon</h1>
+
+<div class="code">
+    <pre id="code6">   &lt;svg height="30" width="30"&gt;
+        &lt;rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" /&gt;
+    </svg></pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code6">Copy </button></div>
+
+<h1 class="head6">Output:</h1>
+<nav class="boxx"><svg height="50" width="50">
+    <rect width="50" height="50" style="fill:rgb(74, 74, 236);stroke-width:1;stroke:rgb(0,0,0)" />
+</svg></nav>
+<h1 class="head4">Creating Complex Shapes</h1>
+<p class="para3">SVG can also be used to create more complex shapes like polygons, lines, and text.</p>
+
+<h1 class="head2">iFrames in HTML</h1>
+<p class="para3">iFrames, or Inline Frames, are an integral part of modern web development. They allow you to embed another HTML page within your current page. In this blog, we'll delve into the utility of iFrames, their attributes, and some use-cases.</p>
+
+<h1 class="head3">What is an iFrame?</h1>
+ <p class="para3">An iFrame is an HTML element that enables an inline frame for the embedding of external content. Essentially, you can load another web page within a designated area of your current webpage.</p>
+
+ <h1 class="head3">Why Use iFrames?</h1>
+ <p class="para3">iFrames offer a variety of use-cases:</p>
+ <ul class="para2">
+    <li><b>Content Isolation</b>: iFrames allow you to isolate third-party content, which can improve security.</li>
+
+    <li><b>Modularity</b>: Easily embed external plugins, widgets, or content.</li>
+
+    <li><b>Resource Separation</b>: Content within an iFrame can load separately from the rest of the page.</li>
+ </ul>
+
+ <h1 class="head4">Basic Syntax</h1>
+ <p class="para3">The basic syntax of an iFrame is quite straightforward:</p>
+
+
+ <div class="code">
+    <pre id="code7">  &lt;iframe src="URL" width="width" height="height"&gt;&lt;/iframe&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code7">Copy </button></div>
+
+
+
+ <h1 class="head3">Attributes of iFrame</h1>
+<p class="para3">Several attributes can enhance the functionality of an iFrame:</p>
+
+<ul class="para2">
+    <li><b>src</b>: Specifies the URL of the page to embed.</li>
+    <li><b>height</b> and <b>width</b>: Define the dimensions.</li>
+    <li><b>frameborder</b>: Indicates whether to display a border.</li>
+    <li><b>scrolling</b>: Controls the scrollbars.</li>
+    <li><b>name</b>: For targeting the iFrame in JavaScript.</li>
+</ul>
+
+<h1 class="head3">Embedding a YouTube Video
+</h1>
+
+<div class="code">
+    <pre id="code8">  &lt;frame src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code8">Copy </button></div>
+
+
+<h1 class="head3">Embedding Google Maps</h1>
+
+<div class="code">
+    <pre id="code9">   &lt;iframe src="https://maps.google.com/maps?q=LOCATION&output=embed" frameborder="0"&gt;&lt;/iframe&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code9">Copy </button></div>
+
+
+
+
+
+
+        <div class="next">
+
+            <a href="16.headelement.html"> <i class="fa fa-mail-reply"
+                    aria-hidden="true"></i></a>
+            <button id="backword"><a
+                    href="16.headelement.html" class="btn">Previous</a></button>
+
+            <button id="forward"><a href="18.cssway.html" class="btn">Next</a></button>
+            <a href="18.cssway.html" >
+                <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+        </div>
+        <footer>
+            <nav class="foot">
+                <h1 class="direct">Direct links</h1>
+                <ul class="link">
+                    <li><a href="1.index.html" class="page">Introduction</a></li>
+                    <li><a href="2.tags.html" class="page">Html Tags</a></li>
+                    <li><a href="3.htmlelement.html" class="page">Html Elements</a></li>
+                    <li><a href="4.htmlattribute.html" class="page">Html Attribute</a></li>
+                    <li><a href="5.comments.html" class="page">Html Comments</a></li>
+                    <li><a href="6.id&classes.html" class="page">Id & Classes</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="7.skeletal .html" class="page">Skeletal Tag</a></li>
+                    <li><a href="8.headingtag.html" class="page">Heading Tags</a></li>
+                    <li><a href="9.paragraphtags.html" class="page">Paragraph Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Anchor Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Image Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Pre Tag </a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="11.inlineblock.html" class="page">Inline Element</a></li>
+                    <li><a href="11.inlineblock.html" class="page">Block Element</a></li>
+                    <li><a href="12.list.html" class="page">Html Lists</a></li>
+                    <li><a href="13.table.html" class="page">Table Tag</a></li>
+                    <li><a href="14.form.html" class="page">Form Tag</a></li>
+                    <li><a href="15.textarea.html" class="page">Textarea & Select </a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="16.headelement.html" class="page">Meta Tag</a></li>
+                    <li><a href="16.headelement.html" class="page">Link & Script tags</a></li>
+                    <li><a href="17.video.html" class="page">Video tag</a></li>
+                    <li><a href="17.video.html" class="page">Audio Tag</a></li>
+                    <li><a href="17.video.html" class="page">Svg Tag</a></li>
+                    <li><a href="17.video.html" class="page">Iframe Tag</a></li>
+                </ul>
+                <ul class="links">
+                    <h2>follow me</h2>
+                    <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbPWMgZbXXHWWvJQmCgfMZNwQvqzthtXHXtpDQwPcpRJVKdlXrzbGkFDglHcwmfCtBL" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                    </li>
+                </ul>
+            </nav>
+            </footer>
+            
+        <script>
+         const list = document.querySelectorAll('.list');
+         function activeLink(){
+             list.forEach((item) =>
+         item.classList.remove('active'));
+         this.classList.add('active');
+         }
+         list.forEach((item) =>
+         item.addEventListener('click',activeLink));
+
+         document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.copy-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const codeId = button.getAttribute('data-code');
+            const codeElement = document.getElementById(codeId);
+            const code = codeElement.textContent;
+
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    });
+});
+     </script>
+
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

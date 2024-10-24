@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<h1 class="head2">var vs let vs const</h1>
+<p>In JavaScript, there are three ways to declare variables: var, let, and const. Each of these keywords has its own rules and uses, and it is important to understand the differences between them in order to write effective and maintainable code.</p>
+
+<h1 class="head3">var</h1>
+
+<p>The "var" keyword is used to declare variables in JavaScript. It was introduced in the early days of the language and was the only way to declare variables for a long time. However, the "var" keyword has some limitations and has been largely replaced by the "let" and "const" keywords in modern JavaScript.<br>
+
+    One of the main issues with "var" is that it is function-scoped, rather than block-scoped. This means that variables declared with "var" are accessible within the entire function in which they are declared, rather than just within the block of code in which they appear. This can lead to unexpected behavior and can make it difficult to reason about the scope of variables in your code.</p>
+
+<h1 class="head3">let</h1>
+<p>The "let" keyword was introduced in ECMAScript 6 (also known as ES6) and is used to declare variables that can be reassigned later. "let" variables are block-scoped, which means that they are only accessible within the block of code in which they are declared. This makes them more predictable and easier to reason about than "var" variables.<br>
+
+    For example:</p>
+
+<div class="code"><pre id="code1"><code>    if (x > 10) {
+    let y = 20;
+    console.log(y); // 20
+  }
+   console.log(y); // ReferenceError: y is not defined
+  </code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+<p>In this example, the "y" variable is declared with the "let" keyword and is only accessible within the block of the if statement. If you try to access it outside of the block, you will get a "ReferenceError" because "y" is not defined in that scope.</p>
+
+<h1 class="head3">const</h1>
+<p>The "const" keyword was also introduced in ES6 and is used to declare variables that cannot be reassigned later. "const" variables are also block-scoped and behave similarly to "let" variables in that respect. However, the main difference is that "const" variables must be initialized with a value when they are declared and cannot be reassigned later.<br>
+
+    For example:</p>
+
+    <div class="code"><pre id="code2"><code>    const PI = 3.14;
+        PI = 3.14159; <div class="code2">      // TypeError: Assignment to constant variable.</div></code></pre></div>
+
+<p>In this example, the "PI" variable is declared with the "const" keyword and is assigned the value of 3.14. If you try to reassign a new value to "PI," you will get a "TypeError" because "PI" is a constant variable and cannot be changed.</p>
+<p>In summary, "var" is an old way of declaring variables that is function-scoped and can be reassigned. "let" is a newer way of declaring variables that is block-scoped and can be reassigned. "const" is a newer way of declaring variables that is block-scoped and cannot be reassigned. In modern JavaScript, it is generally recommended to use "let" and "const" instead of "var," as they provide better scoping and make it easier to write maintainable code</p>
+
+
+
+
+
+
+
+    <div class="next">
+
+        <a href="44.jsprimitives.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="44.jsprimitives.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="46.jsifelse.html" class="btn">Next</a></button>
+        <a href="46.jsifelse.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="41.jsintro.html" class="page">JS Introduction</a></li>
+                <li><a href="42.jsnodeinstall.html" class="page">Node.Js Installation</a></li>
+                <li><a href="43.jsvariables.html" class="page">Variable</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Primitives & Objects</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Operators and Expressions</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="45.var-let-const.html" class="page">var vs let vs const</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else conditionals</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else ladder</a></li>
+                <li><a href="47.switchternary.html" class="page">Switch case</a></li>
+                <li><a href="47.switchternary.html" class="page">Ternary Operator</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="47.switchternary.html" class="page">For Loops</a></li>
+                <li><a href="48.jswhile.html" class="page">While Loop</a></li>
+                <li><a href="48.jswhile.html" class="page">Functions</a></li>
+                <li><a href="49.jsstring.html" class="page">Strings</a></li>
+                <li><a href="50.jsarray.html" class="page">Array</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="51.jsmap.html" class="page">Map</a></li>
+                <li><a href="51.jsmap.html" class="page">Filter</a></li>
+                <li><a href="51.jsmap.html" class="page">Reduce</a></li>
+                <li><a href="52.jsmath.html" class="page">Math</a></li>
+                <li><a href="52.jsmath.html" class="page">number</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="52.jsmath.html" class="page">Boolean</a></li>
+                <li><a href="53.jsobject.html" class="page">Objects</a></li>
+                <li><a href="54.js.getelement.html" class="page">get element by</a></li>
+                <li><a href="55.innerouter.html" class="page">Inner Html</a></li>
+                <li><a href="55.innerouter.html" class="page">Outer Html</a></li>
+
+
+            </ul>
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                </li>
+                <li class="social"><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

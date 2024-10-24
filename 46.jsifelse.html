@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="head1">If else conditionals and If else ladder</h1>
+<h1 class="head2">If else conditionals</h1>
+    <p>The "if" statement in JavaScript is used to execute a block of code if a certain condition is met. The "else"
+    clause is used to execute a block of code if the condition is not met.<br>
+
+    Here is the basic syntax for an "if" statement:</p>
+    <div class="code">
+        <pre
+            id="code1"><code>    if (condition) {<div class="code2">         // code to be executed if condition is true</div>     }</code></pre>
+    </div>
+    <div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<p>Here is the syntax for an "if" statement with an "else" clause:</p>
+<div class="code"><pre id="code2"><code>   if (condition) {
+    <div class="code2">    // code to be executed if condition is true</div>
+  } else {<div class="code2"> 
+    // code to be executed if condition is false</div>
+  }
+  </code></pre></div>
+  <div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<p>The condition is a boolean expression that evaluates to either true or false. If the condition is true, the code in the "if" block is executed. If the condition is false, the code in the "else" block is executed (if present).<br>
+
+    For example:</p>
+
+<div class="code"><pre id="code3"><code>    let x = 10;
+    if (x > 5) {
+      console.log("x is greater than 5");
+    } else {
+      console.log("x is not greater than 5");
+    }
+    </code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+<p>In this example, the condition "x > 5" is true, so the code in the "if" block is executed and the message "x is greater than 5" is printed to the console</p>
+
+<h1 class="head2">If else ladder</h1>
+<p>The "if-else ladder" is a control structure in JavaScript that allows you to execute a different block of code depending on multiple conditions. It is called a ladder because it consists of multiple "if" and "else" statements arranged in a ladder-like fashion.<br>
+
+    Here is the syntax for an "if-else ladder":</p>
+
+    <div class="code"><pre id="code3"><code>    if (condition1) {<div class="code2">       // code to be executed if condition1 is true</div>   } else if (condition2) { <div class="code2">       // code to be executed if condition1 is false and condition2 is true</div>   } else if (condition3) {
+<div class="code2">       // code to be executed if condition1 and condition2 are false and condition3 is true</div>   } ...
+      else {<div class="code2">      // code to be executed if all conditions are false</div>   }</code></pre></div>
+    
+    <div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+    <p>In this structure, each "if" statement is followed by an optional "else" statement. If the first "if" condition is true, the code in the corresponding block is executed and the rest of the ladder is skipped. If the first "if" condition is false, the second "if" condition is evaluated, and so on. If none of the conditions are true, the code in the "else" block is executed.<br>
+
+        For example:</p>
+
+<div class="code"><pre id="code4"><code>    let x = 10;
+    if (x > 15) {
+      console.log("x is greater than 15");
+    } else if (x > 10) {
+      console.log("x is greater than 10 but less than or equal to 15");
+    } else if (x > 5) {
+      console.log("x is greater than 5 but less than or equal to 10");
+    } else {
+      console.log("x is less than or equal to 5");
+    }
+    </code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+<p>In this example, the first "if" condition "x > 15" is false, so the second "if" condition "x > 10" is evaluated. This condition is also false, so the third "if" condition "x > 5" is evaluated. This condition is true, so the code in the corresponding block is executed and the message "x is greater than 5 but less than or equal to 10" is printed to the console.<br>
+
+    The "if-else ladder" is a useful control structure for executing different blocks of code based on multiple conditions. It can help you write more concise and maintainable code in JavaScript.</p>
+
+
+
+
+
+
+
+    <div class="next">
+
+        <a href="45.var-let-const.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="45.var-let-const.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="47.switchternary.html" class="btn">Next</a></button>
+        <a href="47.switchternary.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="41.jsintro.html" class="page">JS Introduction</a></li>
+                <li><a href="42.jsnodeinstall.html" class="page">Node.Js Installation</a></li>
+                <li><a href="43.jsvariables.html" class="page">Variable</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Primitives & Objects</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Operators and Expressions</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="45.var-let-const.html" class="page">var vs let vs const</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else conditionals</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else ladder</a></li>
+                <li><a href="47.switchternary.html" class="page">Switch case</a></li>
+                <li><a href="47.switchternary.html" class="page">Ternary Operator</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="47.switchternary.html" class="page">For Loops</a></li>
+                <li><a href="48.jswhile.html" class="page">While Loop</a></li>
+                <li><a href="48.jswhile.html" class="page">Functions</a></li>
+                <li><a href="49.jsstring.html" class="page">Strings</a></li>
+                <li><a href="50.jsarray.html" class="page">Array</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="51.jsmap.html" class="page">Map</a></li>
+                <li><a href="51.jsmap.html" class="page">Filter</a></li>
+                <li><a href="51.jsmap.html" class="page">Reduce</a></li>
+                <li><a href="52.jsmath.html" class="page">Math</a></li>
+                <li><a href="52.jsmath.html" class="page">number</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="52.jsmath.html" class="page">Boolean</a></li>
+                <li><a href="53.jsobject.html" class="page">Objects</a></li>
+                <li><a href="54.js.getelement.html" class="page">get element by</a></li>
+                <li><a href="55.innerouter.html" class="page">Inner Html</a></li>
+                <li><a href="55.innerouter.html" class="page">Outer Html</a></li>
+
+
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                </li>
+                <li class="social"><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

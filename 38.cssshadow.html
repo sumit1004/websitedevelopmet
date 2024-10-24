@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<h1 class="head2">CSS Shadows</h1>
+
+<p>When it comes to web design, CSS (Cascading Style Sheets) plays an indispensable role in enhancing the visual aesthetics of a website. Among its vast array of properties, the ones that help bring depth and focus to an element are the shadow and outline properties. Let’s delve into the magic of CSS shadows and outlines.</p>
+
+<h1 class="head3">Box Shadows</h1>
+<p>box-shadow is a popular CSS property that enables designers to add shadow effects around an element's frame. It can be used to give any element, be it a div, image, or button, a 3D feel or to emphasize on hover.</p>
+
+<div class="code"><pre id="code1"><div class="code2">&lt;-------------------Syntax----------------------&gt;</div>
+    box-shadow: h-offset v-offset blur spread color inset;
+    <div class="code2">&lt;-------------------Example----------------------&gt;</div>   .div-element { box-shadow: 5px 5px 15px 5px #888888; }
+    </pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<ul class="para">
+    <li>h-offset and v-offset: Determines the shadow's horizontal and vertical position.</li>
+    <li>blur: The larger the value, the blurrier the shadow.</li>
+    <li>spread: Expands or shrinks the shadow size.</li>
+    <li>color: Defines the shadow color.</li>
+    <li>inset: Makes the shadow inner.</li>
+</ul>
+
+<h1 class="head3">Text Shadows</h1>
+<p>text-shadow is utilized to give shadows specifically to the text. It can elevate the readability of the text or give it an elegant appearance.</p>
+
+<div class="code"><pre id="code2"><div class="code2">&lt;-------------------Syntax----------------------&gt;</div>
+    text-shadow: h-offset v-offset blur color;
+    <div class="code2">&lt;-------------------Example----------------------&gt;</div>   .text-element { text-shadow: 2px 2px 4px #888888; }
+    </pre></div>
+
+<div class="copytext"><butto class="copy-btn" data-code="code2">Copy</butto></div>
+
+<h1 class="head3">Outlines</h1>
+
+<p>An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements.</p>
+
+<div class="code"><pre id="code3"><div class="code2">&lt;-------------------Syntax----------------------&gt;</div>
+    outline: width style color;<div class="code2">&lt;-------------------Example----------------------&gt;</div> 
+    .button-element:focus { outline: 2px solid blue; }</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<ul class="para">
+    <li>width: Sets the outline width.</li>
+    <li>style: Determines the style of the outline such as solid, dotted, or dashed.</li>
+    <li>color: Sets the outline color.</li>
+
+</ul>
+
+<h1 class="head3">Differences between Outlines and Borders:</h1>
+<p>While both can visually appear similar, outlines differ from borders in a few ways:</p>
+
+<ol>
+    <li><b>Position</b>: Outlines don't take up space; they're drawn around the element, outside of any border.</li>
+    <li><b>Offset</b>: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.</li>
+    <li><b>Width</b>: Borders can have varying widths on different sides, outlines have a uniform width.</li>
+    <li><b>Rounded Corners</b>: Borders can have rounded corners using border-radius, while outlines generally cannot.
+    </li>
+</ol>
+
+
+
+
+
+
+    <div class="next">
+
+        <a href="37.cssadvance.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="37.cssadvance.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="39.cssanimation.html" class="btn">Next</a></button>
+        <a href="39.cssanimation.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

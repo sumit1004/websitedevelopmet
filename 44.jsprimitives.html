@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<h1 class="head2">Primitives, Objects, Operators and Expressions</h1>
+<p>In JavaScript, there are two main types of data: primitives and objects.</p>
+
+<h1 class="head3">Primitives</h1>
+<p>Primitives are the simplest and most basic data types in JavaScript. They include:</p>
+
+<ul class="para">
+    <li>Numbers (e.g. 10, 3.14)</li>
+    <li>Strings (e.g. "hello", 'world')</li>
+    <li>Booleans (e.g. true, false)</li>
+    <li>Null (a special value that represents an absence of value)</li>
+    <li>Undefined (a special value that represents an uninitialized variable)</li>
+</ul>
+
+<p>Primitives are immutable, which means that once they are created, they cannot be changed. For example:</p>
+
+<div class="code"><pre id="code1"><code>    let x = 10;
+    x = 20; // x is now 20
+    </code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+<p>In this example, the value of "x" is changed from 10 to 20. However, this does not change the value of the primitive itself, but rather creates a new primitive with the value of 20.</p>
+
+<h1 class="head2">Objects</h1>
+<p>Objects are more complex data types in JavaScript and are used to represent real-world objects or abstract concepts. They are composed of key-value pairs, where the keys are strings and the values can be any data type (including primitives and other objects).<br>
+
+    Objects are mutable, which means that they can be changed after they are created. For example:</p>
+    <div class="code"><pre id="code2"><code>    let obj = { name: "John", age: 30 };
+    obj.age = 31; <div class="code2">    // the age property of obj is now 31</div></code></pre></div>
+    <div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+    <p>In this example, the "age" property of the "obj" object is changed from 30 to 31. This changes the value of the object itself, rather than creating a new object.<br>
+
+        There are several other data types in JavaScript that are classified as objects, including arrays, functions, and dates. These data types behave similarly to objects in that they are mutable and can be modified after they are created.</p>
+
+<p>In summary, primitives are the simplest data types in JavaScript and are immutable. Objects are more complex data types that are used to represent real-world objects or abstract concepts and are mutable. It is important to understand the differences between these two types of data in order to write effective and maintainable code in JavaScript.</p>
+
+<h1 class="head2">Operators and Expressions</h1>
+<p>Operators in JavaScript are symbols that perform specific operations on one or more operands (values or variables). For example, the addition operator (+) adds two operands together and the assignment operator (=) assigns a value to a variable.<br>
+
+    There are several types of operators in JavaScript, including:</p>
+
+<ul class="para">
+    <li>Arithmetic operators (e.g. +, -, *, /, %)</li>
+    <li>Comparison operators (e.g. >, &lt;, >=, &lt;=, ==, !=)</li>
+    <li>Logical operators (e.g. &&, ||, !)</li>
+    <li>Assignment operators (e.g. =, +=, -=, *=, /=)</li>
+    <li>Conditional (ternary) operator (e.g. ?:)
+    </li>
+</ul>
+
+<p>Expressions are combinations of values, variables, and operators that produce a result. For example:</p>
+
+<div class="code"><pre id="code3"><code>    let x = 10;
+    let y = 20;
+    let z = x + y;<div class="code2">      // z is 30</div></code></pre></div>
+    <div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+    <p>In this example, the expression "x + y" is evaluated to 30 and assigned to the "z" variable.<br>
+
+    Operator precedence determines the order in which operators are applied when an expression has multiple operators. For example:</p>
+
+    <div class="code"><pre id="code4"><code>    let x = 10 + 5 * 3; // x is 25</code></pre></div>
+        <div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<p>In this example, the multiplication operator (*) has a higher precedence than the addition operator (+), so the multiplication is performed before the addition. As a result, the expression is evaluated as 10 + (5 * 3) = 25.<br>
+
+    You can use parentheses to specify the order of operations in an expression. For example:</p>
+
+    <div class="code"><pre id="code5"><code>    let x = (10 + 5) * 3; // x is 45
+</code></pre></div>
+    <div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+<p>In this example, the parentheses indicate that the addition should be performed before the multiplication. As a result, the expression is evaluated as (10 + 5) * 3 = 45.</p>
+
+<p>In summary, operators are symbols that perform specific operations on one or more operands, and expressions are combinations of values, variables, and operators that produce a result. Operator precedence determines the order in which operators are applied in an expression, and parentheses can be used to specify the order of operations. Understanding how to use operators and expressions is an important part of programming in JavaScript.</p>
+
+
+ <div class="next">
+
+        <a href="43.jsvariables.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="43.jsvariables.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="45.var-let-const.html" class="btn">Next</a></button>
+        <a href="45.var-let-const.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="41.jsintro.html" class="page">JS Introduction</a></li>
+                <li><a href="42.jsnodeinstall.html" class="page">Node.Js Installation</a></li>
+                <li><a href="43.jsvariables.html" class="page">Variable</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Primitives & Objects</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Operators and Expressions</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="45.var-let-const.html" class="page">var vs let vs const</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else conditionals</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else ladder</a></li>
+                <li><a href="47.switchternary.html" class="page">Switch case</a></li>
+                <li><a href="47.switchternary.html" class="page">Ternary Operator</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="47.switchternary.html" class="page">For Loops</a></li>
+                <li><a href="48.jswhile.html" class="page">While Loop</a></li>
+                <li><a href="48.jswhile.html" class="page">Functions</a></li>
+                <li><a href="49.jsstring.html" class="page">Strings</a></li>
+                <li><a href="50.jsarray.html" class="page">Array</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="51.jsmap.html" class="page">Map</a></li>
+                <li><a href="51.jsmap.html" class="page">Filter</a></li>
+                <li><a href="51.jsmap.html" class="page">Reduce</a></li>
+                <li><a href="52.jsmath.html" class="page">Math</a></li>
+                <li><a href="52.jsmath.html" class="page">number</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="52.jsmath.html" class="page">Boolean</a></li>
+                <li><a href="53.jsobject.html" class="page">Objects</a></li>
+                <li><a href="54.js.getelement.html" class="page">get element by</a></li>
+                <li><a href="55.innerouter.html" class="page">Inner Html</a></li>
+                <li><a href="55.innerouter.html" class="page">Outer Html</a></li>
+
+
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

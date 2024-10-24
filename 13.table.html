@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Code</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="navi">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="1.index.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-html5"></ion-icon></span>
+                            <span class="text">HTML</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="18.cssway.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-css3"></ion-icon></span>
+                            <span class="text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="41.jsintro.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-nodejs"></ion-icon></span>
+                            <span class="text">JS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon
+                                    name="apps-outline"></ion-icon></span>
+                            <span class="text">ABOUT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   
+ <h1 class="head2">HTML Tables</h1>
+ <p class="para3">HTML tables allow you to arrange data like text, images, and links in rows and columns. You use the &lt;table&gt; tag to start and end a table. </p>
+    
+ <div class="code">
+    <pre id="code1">  &lt;table&gt;<nav class="code5">    // table content</nav>  &lt;/table&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code1">Copy </button></div>
+ 
+    <h1 class="head3">Key Elements of HTML Table
+    </h1>
+    <ul class="para2">
+        <li>&lt;table&gt;: Defines the table itself.</li>
+        <li>&lt;tr&gt;: Used for table rows.</li>
+        <li>&lt;th&gt;: Used for table headings.</li>
+        <li>&lt;td&gt;: Used for table cells (data).</li>
+    </ul>
+    <h1 class="head4">Basic Table Structure</h1>
+
+    <div class="code">
+        <pre id="code2">   &lt;table&gt;
+            &lt;tr&gt;
+               &lt;th&gt;Name&lt;/th&gt;
+               &lt;th&gt;Age&lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Sumit&lt;/td&gt;
+               &lt;td&gt;18&lt;/td&gt;
+            &lt;/tr&gt;
+           &lt;/table&gt;</pre></div>
+        <div class="copytext">
+                    <button class="copy-btn" data-code="code2">Copy </button></div>
+
+      <h1 class="head4">Output</h1>
+<nav class="para3">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Sumit</td>
+          <td>18</td>
+        </tr>
+      </table></nav>
+<h1 class="head3">rowspan and colspan Attributes</h1>
+<p class="para3"><b>Rowspan</b>: If you want a table cell to span multiple rows, you can use the rowspan attribute.</p>
+
+<div class="code">
+    <pre id="code3">  &lt;td rowspan="value"&gt;&lt;/td&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code3">Copy </button></div>
+
+
+<p class="para3"><b>Colspan</b>: If you want a table cell to span multiple columns, you can use the colspan attribute.</p>
+
+<div class="code">
+    <pre id="code4">  &lt;td colspan="value"&gt;&lt;/td&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code4">Copy </button></div>
+
+
+<h1 class="heading">Visual Representation of Rowspan and Colspan</h1>
+<nav class="rowcol">
+<nav class="row">
+  <div class="row1">1</div>
+  <div class="row2">1</div>
+  <div class="row3">Rowspan</div>
+</nav>
+<nav class="col">
+    <div class="col1">Colspan</div>
+    <div class="col2">1</div>
+    <div class="col3">1</div>
+  </nav>
+</nav>
+  <nav class="cap">
+  <h1 class="head2">Adding a Caption
+</h1>
+<p class="para3">To add a title to your table, you can use the &lt;caption&gt; element. This element helps both in terms of SEO and accessibility.</p>
+
+<div class="code">
+    <pre id="code5">   &lt;table&gt;
+        &lt;caption&gt;Student Details&lt;/caption><nav class="code6">     &lt;!-- Rest of the table here --&gt;</nav>   &lt;/table&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code5">Copy </button></div>
+
+
+
+    <h1 class="head3">Table Headers and Footers
+    </h1>
+    <p class="para3">Besides &lt;th&gt; for individual header cells, HTML tables allow you to group header or footer content using &lt;thead&gt; and &lt;tfoot&gt;.</p>
+
+    <div class="code">
+        <pre id="code6">   &lt;table&gt;
+            &lt;head&gt;
+               &lt;!--  header content --&gt;
+            &lt;/thead>
+            &lt;tfoot&gt;
+            &lt;!-- footer content --&gt;
+            &lt;/tfoot&gt;
+            &lt;tbody&gt;
+            &lt;!-- body content --&gt;
+            &lt;/tbody&gt;
+       &lt;/table&gt;</pre></div>
+        <div class="copytext">
+                    <button class="copy-btn" data-code="code6">Copy </button></div>
+
+   <h1 class="head3">Column Groups
+</h1>
+<p class="para3">You can use the &lt;colgroup&gt; and &lt;col&gt; elements to apply styles to an entire column in an HTML table.
+</p>
+
+<div class="code">
+    <pre id="code7"> &lt;table&gt;
+        &lt;colgroup&gt;
+          &lt;col style="background-color:yellow"&gt;
+        &lt;/colgroup&gt;<nav class="code6">     &lt;!-- rest of the table --&gt;</nav>  &lt;/table&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code7">Copy </button></div>
+
+
+
+
+    <h1 class="head3">Accessibility in Tables
+    </h1>
+    <p class="para3">To make your tables more accessible, you can use the scope attribute in &lt;th&gt; elements to specify if they are headers for columns, rows, or groups of columns or rows.</p>
+
+    <div class="code">
+        <pre id="code8"> &lt;th scope="col"&gt;Name&lt;/th&gt;
+            &lt;th scope="col"&gt;Age&lt;/th&gt;</pre></div>
+        <div class="copytext">
+                    <button class="copy-btn" data-code="code8">Copy </button></div>
+
+
+<h1 class="head3">Sample HTML Table
+</h1>
+
+<div class="code">
+    <pre id="code9"> &lt;table border="1"&gt;
+        &lt;!-- Caption --&gt;
+        &lt;caption&gt;Employee Information&lt;/caption&gt;
+     <nav class="code6">   &lt;!-- Table Header --&gt;</nav>    &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;ID&lt;/th&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Position&lt;/th&gt;
+                &lt;th&gt;Salary&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;<nav class="code6">   &lt;--Table Body --&gt;</nav>     &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td>Abhishek&lt;/td&gt;
+                &lt;td&gt;Developer&lt;/td&gt;
+                &lt;td&gt;80,000&lt;/td&gt;
+            &lt;/tr>
+            &lt;tr>
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Jatin&lt;/td&gt;
+                &lt;td&gt;Designer&lt;/td&gt;
+                &lt;td&gt;70,000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Rishav&lt;/td&gt;
+                &lt;td&gt;Manager&lt;/td&gt;
+                &lt;td&gt;90,000&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;<nav class="code6">&lt;!-- Table Footer --&gt;</nav>    &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td colspan="3"&gt;Total Employees&lt;/td&gt;
+                &lt;td&gt;3&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+    &lt;/table&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code9">Copy </button></div>
+
+
+<nav class="para3">
+<h1 class="head4">Output:</h1>
+<table border="1">
+    <!-- Caption -->
+    <caption>Employee Information</caption>
+
+    <!-- Table Header -->
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+
+    <!-- Table Body -->
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Abhishek</td>
+            <td>Developer</td>
+            <td>80,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jatin</td>
+            <td>Designer</td>
+            <td>70,000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rishav</td>
+            <td>Manager</td>
+            <td>90,000</td>
+        </tr>
+    </tbody>
+<!-- Table Footer -->
+    <tfoot>
+        <tr>
+            <td colspan="3">Total Employees</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+</table>
+</nav>
+
+</nav>
+    
+
+
+<div class="next">
+
+            <a href="12.list.html"> <i class="fa fa-mail-reply"
+                    aria-hidden="true"></i></a>
+            <button id="backword"><a
+                    href="12.list.html" class="btn">Previous</a></button>
+
+            <button id="forward"><a href="14.form.html" class="btn">Next</a></button>
+            <a href="14.form.html">
+                <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+        </div>
+        <footer>
+            <nav class="foot">
+                <h1 class="direct">Direct links</h1>
+                <ul class="link">
+                    <li><a href="1.index.html" class="page">Introduction</a></li>
+                    <li><a href="2.tags.html" class="page">Html Tags</a></li>
+                    <li><a href="3.htmlelement.html" class="page">Html Elements</a></li>
+                    <li><a href="4.htmlattribute.html" class="page">Html Attribute</a></li>
+                    <li><a href="5.comments.html" class="page">Html Comments</a></li>
+                    <li><a href="6.id&classes.html" class="page">Id & Classes</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="7.skeletal .html" class="page">Skeletal Tag</a></li>
+                    <li><a href="8.headingtag.html" class="page">Heading Tags</a></li>
+                    <li><a href="9.paragraphtags.html" class="page">Paragraph Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Anchor Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Image Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Pre Tag </a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="11.inlineblock.html" class="page">Inline Element</a></li>
+                    <li><a href="11.inlineblock.html" class="page">Block Element</a></li>
+                    <li><a href="12.list.html" class="page">Html Lists</a></li>
+                    <li><a href="13.table.html" class="page">Table Tag</a></li>
+                    <li><a href="14.form.html" class="page">Form Tag</a></li>
+                    <li><a href="15.textarea.html" class="page">Textarea & Select </a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="16.headelement.html" class="page">Meta Tag</a></li>
+                    <li><a href="16.headelement.html" class="page">Link & Script tags</a></li>
+                    <li><a href="17.video.html" class="page">Video tag</a></li>
+                    <li><a href="17.video.html" class="page">Audio Tag</a></li>
+                    <li><a href="17.video.html" class="page">Svg Tag</a></li>
+                    <li><a href="17.video.html" class="page">Iframe Tag</a></li>
+                </ul>
+                <ul class="links">
+                    <h2>follow me</h2>
+                    <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbPWMgZbXXHWWvJQmCgfMZNwQvqzthtXHXtpDQwPcpRJVKdlXrzbGkFDglHcwmfCtBL" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                    </li>
+                </ul>
+            </nav>
+            </footer>
+            
+        <script>
+         const list = document.querySelectorAll('.list');
+         function activeLink(){
+             list.forEach((item) =>
+         item.classList.remove('active'));
+         this.classList.add('active');
+         }
+         list.forEach((item) =>
+         item.addEventListener('click',activeLink));
+
+
+         document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.copy-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const codeId = button.getAttribute('data-code');
+            const codeElement = document.getElementById(codeId);
+            const code = codeElement.textContent;
+
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    });
+});
+     </script>
+
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

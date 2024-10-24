@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Code</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="navi">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="1.index.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-html5"></ion-icon></span>
+                            <span class="text">HTML</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="18.cssway.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-css3"></ion-icon></span>
+                            <span class="text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="41.jsintro.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-nodejs"></ion-icon></span>
+                            <span class="text">JS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon
+                                    name="apps-outline"></ion-icon></span>
+                            <span class="text">ABOUT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  
+<h1 class="head2">Anchor Tag</h1>
+<p class="para3">Links are fundamental to navigating the web. In HTML, links are created using the &lt;a&gt; tag, also known as the Anchor tag.</p>
+<h1 class="head3">Key Characteristics of HTML Links</h1>
+<ul class="para2">
+    <li>Specified by the &lt;a&gt; tag.</li>
+    <li>Also known as hyperlinks.</li>
+    <li>Used to link one document to another.</li>
+    <li>Includes a closing tag &lt;/a&gt;.</li>
+</ul>
+
+<div class="code">
+    <pre id="code1">  &lt;a href="Your specified path"&gt; content &lt;/a&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code1">Copy </button></div>
+
+
+<h1 class="head3">Essential Attributes of the Anchor Tag</h1>
+<p class="para3">HTML links primarily use two attributes:</p>
+<ul class="para2">
+    <li><b>href attribute</b>: Defines the URL the link points to.</li>
+    <li><b>target attribute</b>: Specifies where to open the linked document.
+    </li>
+</ul>
+<h1 class="head3">Target Attribute Values
+</h1>
+<ul class="para2">
+    <li><b>_blank</b>: Opens the linked document in a new window or tab.
+    </li>
+    <li><b>_top</b>: Opens document in the full body of the window.
+    </li>
+    <li><b>_self</b>: Opens document in the same window or tab (default behavior).
+    </li>
+    <li><b>_parent</b>: Opens the linked document in the parent frame.
+    </li>
+</ul>
+<h1 class="head3">Linking to Specific Page Sections</h1>
+<p class="para3">To link to a specific section of a webpage, you can:</p>
+<ul class="para2">
+    <li>Use the name or id attribute of the target section.
+    </li>
+    <li>Use a hyperlink with a hash (#) followed by the target id or name.
+    </li>
+</ul>
+<h1 class="head4">Example</h1>
+<p class="para3">Let's say you have a long webpage with multiple sections, and you want to create a link at the top that, when clicked, takes the user directly to a specific section further down the page. You can do this using HTML links that target specific sections.</p>
+
+<div class="code">
+    <pre id="code2">  &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;My Webpage&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;<nav class="code5">     &lt;!-- Link at the top --&gt;</nav>   &lt;a href="#gardening-tips">Go to Gardening Tips&lt;/a&gt;<nav class="code5">     &lt;!-- Some content --&gt;</nav>   &lt;p&gt;Here is some other content...&lt;/p&gt;
+    <nav class="code5">     &lt;!-- Gardening Tips Section --&gt;</nav>
+        &lt;h2 id="gardening-tips">Gardening Tips&lt;/h2&gt;
+         &lt;p>This section provides tips on how to garden...&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code2">Copy </button></div>
+
+   
+<h1 class="head3">Link Colors</h1>
+<p class="para3">Links typically appear in different colors based on their state:</p>
+<ul class="para2">
+    <li><b>Active</b>: <nav class="four"> Displayed in red and underlined like this sentence.</div></li>
+    <li><b>Visited</b>:<div class="five"> Appears purple and underlined like this sentence.</div></li>
+    <li><b>Unvisited</b>:<div class="six"> Shown as blue and underlined like this sentence.</div></li>
+</ul>
+    <h1 class="head2">Image Tag
+    </h1>
+    <p class="para3">Images play a crucial role in enhancing web pages by providing a visual context that complements textual content. In HTML, the &lt;img&gt; tag is used to embed images into web pages.</p>
+    
+    <div class="code">
+        <pre id="code3">   &lt;img src="image's path"/&gt;</pre></div>
+        <div class="copytext">
+                    <button class="copy-btn" data-code="code3">Copy </button></div>
+    
+
+ <h1 class="head3">Key Features of the <img> Tag
+ </h1>
+<ul class="para3">
+    <li>It's a self-closing tag, meaning it doesn't require a corresponding closing tag.</li>
+    <li>Commonly used attributes include the "alt" attribute for image descriptions and the "src" attribute for specifying the image location.</li>
+    <li>Supports various image formats including PNG, JPEG, JPG, and GIF.</li>
+</ul>
+<h1 class="head4">Setting Mandatory Attributes</h1>
+<p class="para3">The "src" and "alt" attributes are essential for the proper functioning of the &lt;img&gt; tag.</p>
+<ul class="para3">
+    <li><b>src attribute</b>: Specifies the path to the image file.</li>
+    <li><b>alt attribute</b>: Provides a text description for the image.
+    </li>
+</ul>
+
+<div class="code">
+    <pre id="code4">  &lt;img src="images/profile_picture.jpg" alt="Profile Picture" /&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code4">Copy </button></div>
+
+
+
+<p class="para3"><b>Note</b>: To find the image's location, right-click on the image, go to properties, and check the location field.</p>
+<h1 class="head4">Setting Image Dimensions</h1>
+<p class="para3">Although dimensions can be set using the "width" and "height" attributes in the &lt;img&gt; tag, modern best practices recommend using CSS for this purpose.</p>
+
+<div class="code">
+    <pre id="code5">  &lt;img src="image.png" alt="Description" width="300" height="100" /&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code5">Copy </button></div>
+
+
+<p class="para3">Setting the width and height attributes for images in HTML can have a positive impact on Search Engine Optimization (SEO). Specifying these dimensions in the &lt;img&gt; tag allows browsers to allocate the correct amount of space on a web page even before the image is fully loaded. This prevents layout shifts, improving the Cumulative Layout Shift (CLS) score—a key metric in Google's Core Web Vitals. A better CLS score can lead to a higher page ranking in search engine results.
+<br><b>Note</b>: Styling dimensions and other properties are now more commonly managed through CSS for better flexibility and maintainability.
+    </p>
+
+    <h1 class="head2">Pre Tag</h1>
+    <p class="para3">The &lt;pre&gt; tag serves as an indispensable tool in HTML for displaying preformatted text, such as code snippets in various programming languages.</p>
+<h1 class="head4">What Does the &lt;pre&gt; Tag Do?</h1>
+<p class="para3">The &lt;pre&gt; tag preserves the original formatting of text, making it an excellent choice for displaying code where spacing and indentation are key.</p>
+
+<div class="code">
+    <pre id="code6">  &lt;pre&gt;<nav class="code6">   &lt;!-- code snippet in any programming language --&gt;</nav>  &lt;/pre&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code6">Copy </button></div>
+
+
+<h1 class="head4">Key Features</h1>
+<ul class="para2">
+    <li>The &lt;pre&gt; tag maintains both spaces and line breaks, ensuring that text appears exactly as it was originally formatted.</li>
+    <li>The &lt;pre&gt; tag has both an opening tag &lt;pre&gt; and a closing tag &lt;/pre&gt;.</li>
+    <li>Additional attributes can also be added for further customization.</li>
+</ul>
+
+<h1 class="head4">When to Use the &lt;pre&gt; Tag?</h1>
+<p class="para3">The &lt;pre&gt; tag is most effective when you want the text to display on your HTML page exactly as it was typed, without any formatting changes. It is especially useful for displaying code snippets or preformatted text from data files.</p>
+<h1 class="head4">Displaying a Simple Python Program and Its Output</h1>
+<p class="para3">In this section, we will use HTML to display a simple Python program that prints 'Hello, World!' to the console. Don't worry, you don't need to know Python; we're just showing how to display the program using the HTML &lt;pre&gt; tag.</p>
+
+
+<div class="next">
+
+    <a href="9.paragraphtags.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+     <button id="backword"><a
+             href="9.paragraphtags.html" class="btn">Previous</a></button>
+
+     <button id="forward"><a href="11.inlineblock.html" class="btn">Next</a></button>
+     <a href="11.inlineblock.html" >
+         <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+ </div>
+ <footer>
+    <nav class="foot">
+        <h1 class="direct">Direct links</h1>
+        <ul class="link">
+            <li><a href="1.index.html" class="page">Introduction</a></li>
+            <li><a href="2.tags.html" class="page">Html Tags</a></li>
+            <li><a href="3.htmlelement.html" class="page">Html Elements</a></li>
+            <li><a href="4.htmlattribute.html" class="page">Html Attribute</a></li>
+            <li><a href="5.comments.html" class="page">Html Comments</a></li>
+            <li><a href="6.id&classes.html" class="page">Id & Classes</a></li>
+        </ul>
+        <ul class="link">
+            <li><a href="7.skeletal .html" class="page">Skeletal Tag</a></li>
+            <li><a href="8.headingtag.html" class="page">Heading Tags</a></li>
+            <li><a href="9.paragraphtags.html" class="page">Paragraph Tag</a></li>
+            <li><a href="10.anchortag.html" class="page">Anchor Tag</a></li>
+            <li><a href="10.anchortag.html" class="page">Image Tag</a></li>
+            <li><a href="10.anchortag.html" class="page">Pre Tag </a></li>
+        </ul>
+        <ul class="link">
+            <li><a href="11.inlineblock.html" class="page">Inline Element</a></li>
+            <li><a href="11.inlineblock.html" class="page">Block Element</a></li>
+            <li><a href="12.list.html" class="page">Html Lists</a></li>
+            <li><a href="13.table.html" class="page">Table Tag</a></li>
+            <li><a href="14.form.html" class="page">Form Tag</a></li>
+            <li><a href="15.textarea.html" class="page">Textarea & Select </a></li>
+        </ul>
+        <ul class="link">
+            <li><a href="16.headelement.html" class="page">Meta Tag</a></li>
+            <li><a href="16.headelement.html" class="page">Link & Script tags</a></li>
+            <li><a href="17.video.html" class="page">Video tag</a></li>
+            <li><a href="17.video.html" class="page">Audio Tag</a></li>
+            <li><a href="17.video.html" class="page">Svg Tag</a></li>
+            <li><a href="17.video.html" class="page">Iframe Tag</a></li>
+        </ul>
+        <ul class="links">
+            <h2>follow me</h2>
+            <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                    <p class="media">Instagram</p>
+                </span></a>
+            </li>
+            <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <p class="media">Youtube</p>
+                </span></a>
+            </li>
+            <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <p class="media">Linkedin</p>
+                </span></a>
+            </li>
+            <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbPWMgZbXXHWWvJQmCgfMZNwQvqzthtXHXtpDQwPcpRJVKdlXrzbGkFDglHcwmfCtBL" style="text-decoration: none;" target="_blank">
+                <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p class="media">sumitkumar042006@gmail.com</p>
+                </span></a>
+            </li>
+        </ul>
+    </nav>
+    </footer>
+    
+ <script>
+         const list = document.querySelectorAll('.list');
+         function activeLink(){
+             list.forEach((item) =>
+         item.classList.remove('active'));
+         this.classList.add('active');
+         }
+         list.forEach((item) =>
+         item.addEventListener('click',activeLink));
+
+         document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.copy-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const codeId = button.getAttribute('data-code');
+            const codeElement = document.getElementById(codeId);
+            const code = codeElement.textContent;
+
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    });
+});
+     </script>
+
+ <script type="module"
+     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule
+     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

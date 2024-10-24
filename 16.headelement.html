@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Code</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="navi">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="1.index.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-html5"></ion-icon></span>
+                            <span class="text">HTML</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="18.cssway.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-css3"></ion-icon></span>
+                            <span class="text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="41.jsintro.html">
+                            <span class="icon"><ion-icon
+                                    name="logo-nodejs"></ion-icon></span>
+                            <span class="text">JS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon
+                                    name="apps-outline"></ion-icon></span>
+                            <span class="text">ABOUT</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+   <h1 class="head2">HTML Meta Tags</h1>
+   <p class="para3">The &lt;meta&gt; tags in HTML provide metadata about the HTML document. Metadata is data (information) about data. &lt;meta&gt; tags always go inside the document's &lt;head&gt; tag and are typically used to specify the character set, page description, keywords, author, and other metadata.<br>Below is an example HTML code snippet that includes various types of &lt;meta&gt; tags commonly used:</p>
+
+   <div class="code">
+    <pre id="code1">  &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;<nav class="code6">   &lt;!-- Character encoding --&gt;</nav>        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <nav class="code6">   &lt;--Responsive design --&gt;</nav>        &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; <nav class="code6">   &lt;--Internet Explorer compatibility --&gt;</nav>        &lt;meta name="description" content="This is a description of the web page"&gt;<nav class="code6">   &lt;!-- Description for search engines --&gt;</nav>        &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt; <nav class="code6">   &lt;!-- Keywords for search engines --&gt;</nav>        &lt;meta name="author" content="Your Name"&gt;<nav class="code6">    &lt;!-- Author name --&gt;</nav>     &lt;title&gt;Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;<nav class="code6">  &lt;!-- Your content here --&gt;</nav>    &lt;/body&gt;
+        &lt;/html&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code1">Copy </button></div>
+
+
+
+    <h1 class="head3">Explanation of each meta tag:    </h1>
+    <ol class="para3">
+        <li><b>Character Encoding (charset)</b>: &lt;meta charset="UTF-8"&gt; sets the character encoding for the webpage. UTF-8 is the most common and recommended.</li>
+
+        <li><b>Viewport</b>: &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; sets the viewport to scale the page to the screen width, useful for responsive design.</li>
+
+        <li><b>IE Compatibility</b>: &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; specifies that the page should be rendered using the latest rendering engine available on Internet Explorer.</li>
+
+        <li><b>Description</b>: &lt;meta name="description" content="This is a description of the web page"&gt; provides a brief description of the webpage, which search engines may use in search results.</li>
+
+        <li><b>Keywords</b>: &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt; specifies keywords for the webpage, which were historically used by search engines but are less relevant today.</li>
+
+        <li><b>Author</b>: &lt;meta name="author" content="Your Name"&gt; indicates the name of the author of the webpage.</li>
+    </ol>
+
+    <h1 class="head3">How to add favicon in HTML?</h1>
+    <p class="para3">A favicon is a small icon that appears next to your website's title in browser tabs. It helps in branding and easy identification among multiple tabs.</p>
+
+    <h1 class="head4">Step 1: Create/Choose Favicon</h1>
+    <p class="para3">Make a square image, usually 16x16 or 32x32 pixels, in .ico format. You can create a favicon from this website</p>
+
+    <h1 class="head4">Step 2: Upload Favicon</h1>
+    <p class="para3">Place the .ico file in your website's root directory, where index.html is located.</p>
+
+    <h1 class="head4">Step 3: Update HTML</h1>
+    <p class="para3">Insert the following code in the &lt;head&gt; section of your index.html file:</p>
+    
+    <div class="code">
+        <pre id="code2">  &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</pre></div>
+        <div class="copytext">
+                    <button class="copy-btn" data-code="code2">Copy </button></div>
+    
+
+
+    <p class="para3">Replace favicon.ico with your file's path if different.</p>
+    <h1 class="head4">Step 4: Test    </h1>
+    <p class="para3">Open your site in different browsers to make sure the favicon appears.</p>
+
+    <h1 class="head2">Link & Script Tags    </h1>
+    <p class="para3">The &lt;link&gt; and &lt;script&gt; tags are essential elements within an HTML document's <head> section. They serve various purposes, like linking external stylesheets or including JavaScript files.</p>
+        <h1 class="head3">The &lt;link&gt; Tag
+        </h1>
+
+<p class="para3">The &lt;link&gt; tag is commonly used to link external stylesheets to an HTML document. It's a self-closing tag, meaning it doesn't require a closing tag.
+<br>Below is an example HTML code snippet that includes a &lt;link&gt; tag to link an external stylesheet:</p>
+
+<div class="code">
+    <pre id="code3">  &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;</pre></div>
+    <div class="copytext">
+                <button class="copy-btn" data-code="code3">Copy </button></div>
+
+
+
+<h1 class="head3">The &lt;script&gt; Tag
+</h1>
+
+<p class="para3">The &lt;script&gt; tag is used to include JavaScript code or files in an HTML document. Unlike the &lt;link&gt; tag, the &lt;script&gt; tag must be closed with a &lt;/script&gt; tag.<br>Below is an example HTML code snippet that includes a &lt;script&gt; tag to link an external JavaScript file:
+
+    <div class="code">
+        <pre id="code4">  &lt;script src="script.js" type="text/javascript"&gt;&lt;/script&gt;</pre></div>
+        <div class="copytext">
+                    <button class="copy-btn" data-code="code4">Copy </button></div>
+
+
+
+<div class="next">
+
+            <a href="15.textarea.html"> <i class="fa fa-mail-reply"
+                    aria-hidden="true"></i></a>
+            <button id="backword"><a
+                    href="15.textarea.html" class="btn">Previous</a></button>
+
+            <button id="forward"><a href="17.video.html" class="btn">Next</a></button>
+            <a href="17.video.html">
+                <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+        </div>
+        <footer>
+            <nav class="foot">
+                <h1 class="direct">Direct links</h1>
+                <ul class="link">
+                    <li><a href="1.index.html" class="page">Introduction</a></li>
+                    <li><a href="2.tags.html" class="page">Html Tags</a></li>
+                    <li><a href="3.htmlelement.html" class="page">Html Elements</a></li>
+                    <li><a href="4.htmlattribute.html" class="page">Html Attribute</a></li>
+                    <li><a href="5.comments.html" class="page">Html Comments</a></li>
+                    <li><a href="6.id&classes.html" class="page">Id & Classes</a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="7.skeletal .html" class="page">Skeletal Tag</a></li>
+                    <li><a href="8.headingtag.html" class="page">Heading Tags</a></li>
+                    <li><a href="9.paragraphtags.html" class="page">Paragraph Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Anchor Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Image Tag</a></li>
+                    <li><a href="10.anchortag.html" class="page">Pre Tag </a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="11.inlineblock.html" class="page">Inline Element</a></li>
+                    <li><a href="11.inlineblock.html" class="page">Block Element</a></li>
+                    <li><a href="12.list.html" class="page">Html Lists</a></li>
+                    <li><a href="13.table.html" class="page">Table Tag</a></li>
+                    <li><a href="14.form.html" class="page">Form Tag</a></li>
+                    <li><a href="15.textarea.html" class="page">Textarea & Select </a></li>
+                </ul>
+                <ul class="link">
+                    <li><a href="16.headelement.html" class="page">Meta Tag</a></li>
+                    <li><a href="16.headelement.html" class="page">Link & Script tags</a></li>
+                    <li><a href="17.video.html" class="page">Video tag</a></li>
+                    <li><a href="17.video.html" class="page">Audio Tag</a></li>
+                    <li><a href="17.video.html" class="page">Svg Tag</a></li>
+                    <li><a href="17.video.html" class="page">Iframe Tag</a></li>
+                </ul>
+                <ul class="links">
+                    <h2>follow me</h2>
+                    <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                    </li>
+                    <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbPWMgZbXXHWWvJQmCgfMZNwQvqzthtXHXtpDQwPcpRJVKdlXrzbGkFDglHcwmfCtBL" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                    </li>
+                </ul>
+            </nav>
+            </footer>
+            
+        <script>
+         const list = document.querySelectorAll('.list');
+         function activeLink(){
+             list.forEach((item) =>
+         item.classList.remove('active'));
+         this.classList.add('active');
+         }
+         list.forEach((item) =>
+         item.addEventListener('click',activeLink));
+
+         document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.copy-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const codeId = button.getAttribute('data-code');
+            const codeElement = document.getElementById(codeId);
+            const code = codeElement.textContent;
+
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    });
+});
+
+     </script>
+
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

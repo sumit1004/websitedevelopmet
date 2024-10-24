@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="head1">CSS Fonts</h1>
+    <p>Fonts play a crucial role in making your page visually appealing. Fonts decide how texts will look on the screen; depending on the website, different kinds of fonts are used.<br>
+
+        Let’s look at the major font attributes.</p>
+
+        <h1 class="head3">Font Color</h1>
+        <p>Font color defines the colour of the text or typography.</p>
+
+        <div class="code"><pre id="code1"><div class="code2">&lt;----------------Syntax-------------------&gt;</div>   selector{
+            color: red;
+        }</pre></div>
+        <div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+        <p>For an in-depth explanation of colours, follow the <a href="21.csscolor.html">CSS Color</a> Tutorial.</p>
+
+        <h1 class="head3">Font size</h1>
+        <p>The font size property sets the size of the fonts.<br>
+
+            It has some predefined sizes, such as small, medium, large, larger, etc.<br>
+            
+            The most commonly used units for font size are px (pixels), em (ems), rem (root ems), and percentage (%).<br>
+            
+            Quick notes:</p>
+            <ul class="para">
+                <li><b>px</b>: px is the absolute unit. This is useful for setting precise sizes.</li>
+              <li><b>em</b>: em is the relative unit, based on the font size of the parent element. If the element's font size is 1.5 em, that means the element will be 1.5 times the size of the parent.</li>
+              <li><b>rem</b>: rem is the relative unit, based on the font size of the root element, i.e., &lt;html&gt;.</li>
+            </ul>
+            <p>Example:</p>
+
+            <div class="code"><pre id="code2">  &lt;html lang="en"&gt;
+   &lt;head&gt;
+       &lt;style&gt;
+           #p1 {
+               font-size: small;
+           }
+           #p2 {
+               font-size: medium;
+           }
+           #p3 {
+               font-size: large;
+           }
+           #p4 {
+               font-size: larger;
+           }
+           #p5 {
+               font-size: 25px;
+           }
+           #p6 {
+               font-size: 2em;
+           }
+           #p7 {
+               font-size: 2rem;
+           }
+           #p8 {
+               font-size: 50%;
+           }
+       &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+       &lt;p id="p1"&gt;font-size: small&lt;/p&gt;
+       &lt;p id="p2"&gt;font-size: medium&lt;/p&gt;
+       &lt;p id="p3"&gt;font-size: largr&lt;/p&gt;
+       &lt;p id="p4"&gt;font-size: larger&lt;/p&gt;
+       &lt;p id="p5"&gt;font-size: 25px&lt;/p&gt;
+       &lt;p id="p6"&gt;font-size: 2em&lt;/p&gt;
+       &lt;p id="p7"&gt;font-size: 2rem&lt;/p&gt;
+       &lt;p id="p8"&gt;font-size: 50%&lt;/p&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;</pre></div>
+
+   <div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<div>
+    <h1 class="head3">Output:</h1>
+    <html lang="en">
+<head>
+    <style>
+        #p1 {
+            font-size: small;
+        }
+        #p2 {
+            font-size: medium;
+        }
+        #p3 {
+            font-size: large;
+        }
+        #p4 {
+            font-size: larger;
+        }
+        #p5 {
+            font-size: 25px;
+        }
+        #p6 {
+            font-size: 2em;
+        }
+        #p7 {
+            font-size: 2rem;
+        }
+        #p8 {
+            font-size: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p id="p8">font-size: 50%</p>
+    <p id="p1">font-size: small</p>
+    <p id="p2">font-size: medium</p>
+    <p id="p3">font-size: largr</p>
+    <p id="p4">font-size: larger</p>
+    <p id="p5">font-size: 25px</p>
+    <p id="p6">font-size: 2em</p>
+    <p id="p7">font-size: 2rem</p>
+    
+</body>
+</html>
+</div>
+
+<h1 class="head3">CSS Font Style</h1>
+
+<p>The font style property sets the style of the font.<br>
+
+    There are three types of font styles: italic, normal, and oblique.<br>
+    
+    Quick notes:</p>
+<ul class="para">
+    <li><b>italic</b>: Italic texts are slightly to the right.</li>
+<li><b>normal</b>: Default text style.</li>
+<li><b>Oblique</b>: Oblique is similar to italic but has less bend</li>
+</ul>
+<p>Example:</p>
+
+<div class="code"><pre id="code3">  &lt;html lang="en"&gt;
+   &lt;head&gt;
+        &lt;style&gt;
+            #p1 {
+                font-style: italic;
+            }
+            #p2 {
+                font-style: normal;
+            }
+            #p3 {
+                font-style: oblique;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p id="p1"&gt;font-style: italic&lt;/p&gt;
+        &lt;p id="p2"&gt;font-style: normal&lt;/p&gt;
+        &lt;p id="p3"&gt;font-style: oblique&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+    <div><h1 class="head3">Output:</h1>
+        <html lang="en">
+
+        <head>
+            <style>
+                #p1 {
+                    font-style: italic;
+                }
+                #p2 {
+                    font-style: normal;
+                }
+                #p3 {
+                    font-style: oblique;
+                }
+            </style>
+        </head>
+        <body>
+            <p id="p1">font-style: italic</p>
+            <p id="p2">font-style: normal</p>
+            <p id="p3">font-style: oblique</p>
+        </body>
+        </html></div>
+
+<h1 class="head3">CSS Font Variant</h1>
+<p>The CSS font variant property helps to toggle with the variations of the text.<br>
+
+    There are two common values for the font-variant property.</p>
+
+    <ul class="para">
+        <li><b>normal</b>: The default value.</li>
+        <li><b>small-caps</b>: This value renders the text in small capital letters.</li>
+    </ul>
+
+<p>Example:</p>
+<div class="code"><pre id="code4">&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            #p1 {
+                font-variant: normal;
+            }
+            #p2 {
+                font-variant: small-caps;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p id="p1"&gt;font-variant: normal;&lt;/p&gt;
+        &lt;p id="p2"&gt;font-variant: small-caps;&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<h1 class="head3">CSS Font Weight</h1>
+<p>The font-weight property controls the thickness or boldness of the text.<br>
+
+    The values range from 100 (thin) to 900 (ultra-bold) and also have some predefined values such as lighter, bold, and bolder.<br>
+    
+    Example:</p>
+
+    <div class="code"><pre id="code5">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {
+            font-weight: 100;
+        }
+        #p2 {
+            font-weight: 200;
+        }
+        #p3 {
+            font-weight: 300;
+        }
+        #p4 {
+            font-weight: 400;
+        }
+        #p5 {
+            font-weight: 500;
+        }
+        #p6 {
+            font-weight: 600;
+        }
+        #p10 {
+            font-weight: lighter;
+        }
+        #p11 {
+            font-weight: bold;
+        }
+        #p12 {
+            font-weight: bolder;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;font-weight: 100&lt;/p&gt;
+    &lt;p id="p2"&gt;font-weight: 200&lt;/p&gt;
+    &lt;p id="p3">font-weight: 300&lt;/p&gt;
+    &lt;p id="p4">font-weight: 400&lt;/p&gt;
+    &lt;p id="p5"&gt;font-weight: 500&lt;/p&gt;
+    &lt;p id="p6"&gt;font-weight: 600&lt;/p&gt;
+    &lt;p id="p7"&gt;font-weight: 700&lt;/p&gt;
+    &lt;p id="p10"&gt;font-size: lighter&lt;/p&gt;
+    &lt;p id="p11"&gt;font-size: bold&lt;/p&gt;
+    &lt;p id="p12"&gt;font-size: bolder&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></div>
+
+
+<div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+<div><h1 class="head3">Output:</h1>
+    <html lang="en">
+        <head>
+            <style>
+                #p1 {
+                    font-weight: 100;
+                }
+                #p2 {
+                    font-weight: 200;
+                }
+                #p3 {
+                    font-weight: 300;
+                }
+                #p4 {
+                    font-weight: 400;
+                }
+                #p5 {
+                    font-weight: 500;
+                }
+                #p6 {
+                    font-weight: 600;
+                }
+
+                #p10 {
+                    font-weight: lighter;
+                }
+                #p11 {
+                    font-weight: bold;
+                }
+                #p12 {
+                    font-weight: bolder;
+                }
+            </style>
+        </head>
+        <body>
+            <p id="p1">font-weight: 100</p>
+            <p id="p2">font-weight: 200</p>
+            <p id="p3">font-weight: 300</p>
+            <p id="p4">font-weight: 400</p>
+            <p id="p5">font-weight: 500</p>
+            <p id="p6">font-weight: 600</p>
+            <p id="p10">font-size: lighter</p>
+            <p id="p11">font-size: bold</p>
+            <p id="p12">font-size: bolder</p>
+        </body>
+        </html></div>
+            
+
+
+<h1 class="head3">Font Family </h1>
+<p>The font family property specifies the font stack. This is used to set the preferred font for the text content.<br>
+
+    We can define multiple font family names separated by commas based on priority.</p>
+
+    <div class="code"><pre id="code6"><div class="code2">&lt;--------------Syntax---------------&gt;</div>   selector{
+        font-family: font1, font2, font3;
+    }
+    <div class="code2">&lt;--------------Example---------------&gt;</div>
+    &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;font-family: 'Courier New', Courier, monospace&lt;/h1&gt;
+    &lt;h2&gt;font-family: 'Times New Roman', Times, serif;&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<h1 class="head3">Generic Font family</h1>
+
+<p>There are five generic font family names that serve as fallback options when specific fonts are not available:</p>
+<ol>
+    <li><b>serif</b>: generic serif fonts (like Times New Roman).</li>
+    <li><b>sans-serif</b>: generic sans-serif fonts (like Arial or Helvetica).</li>
+    <li><b>monospace</b>: generic monospaced fonts (like Courier New).</li>
+    <li><b>cursive</b>: generic cursive fonts (for handwritten styles).</li>
+    <li><b>fantasy</b>: generic fantasy fonts (for decorative styles).</li>
+</ol>
+<p><b>Tip</b>: It is recommended to end the font family with any of these generic font family names.</p>
+
+<h1 class="head3">Custom fonts</h1>
+<p>We can also use custom fonts for our websites; here, we will be using <a href="https://fonts.google.com/">Google Fonts.</a>
+
+   <br> Follow the steps:</p>
+   <ol>
+    <li>Go to <a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+    <li>Select your preferred font.</li>
+    <li>Choose the fonts based on font weight.</li>
+    <li>Copy the import link and paste it on the top of the stylesheet.</li>
+    <li>Copy the font family and paste it wherever you want to use it.</li>
+   </ol>
+
+
+
+
+
+
+<div class="next">
+
+        <a href="25.cssvideo.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="25.cssvideo.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="27.csstext.html" class="btn">Next</a></button>
+        <a href="27.csstext.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

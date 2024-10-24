@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<h1 class="head2">Switch case</h1>
+<p>The "switch" statement in JavaScript is another control structure that allows you to execute a different block of code depending on a specific value. It is often used as an alternative to the "if-else ladder" when you have multiple conditions to check against a single value.<br>
+
+    Here is the syntax for a "switch" statement:</p>
+
+<div class="code"><pre id="code1"><code>    switch (expression) {
+    case value1:  <div class="code2">       // code to be executed if expression == value1</div>    break;
+    case value2:  <div class="code2">       // code to be executed if expression == value2</div>    break;
+    ...
+    default: <div class="code2">       // code to be executed if expression does not match any of the values</div>    }
+  </code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<p>In this structure, the "expression" is evaluated and compared to each of the "case" values. If the "expression" matches a "case" value, the corresponding block of code is executed. The "break" statement is used to exit the "switch" statement and prevent the code in the following cases from being executed. The "default" case is optional and is executed if the "expression" does not match any of the "case" values.<br>
+
+    For example:</p>
+
+<div class="code"><pre id="code2"><code>    let x = "apple";
+    switch (x) {
+      case "apple":
+        console.log("x is an apple");
+        break;
+      case "banana":
+        console.log("x is a banana");
+        break;
+      case "orange":
+        console.log("x is an orange");
+        break;
+      default:
+        console.log("x is something else");
+    }</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<p>In this example, the "expression" is the variable "x," which has the value "apple." The "expression" is compared to each of the "case" values, and when it matches the value "apple," the corresponding block of code is executed and the message "x is an apple" is printed to the console.<br>
+
+    The "switch" statement is a useful control structure for executing different blocks of code based on a specific value. It can help you write more concise and maintainable code in JavaScript.</p>
+
+<h1 class="head2">Ternary Operator</h1>
+<p>The ternary operator is a shorthand way to write an if-else statement in JavaScript. It takes the form of condition ? value1 : value2, where condition is a boolean expression, and value1 and value2 are expressions of any type. If condition is true, the ternary operator returns value1; if condition is false, it returns value2.<br>
+
+    Here's an example of how you can use the ternary operator to assign a value to a variable based on a condition:</p>
+
+<div class="code"><pre id="code3"><code>    let x = 10;
+    let y = 20;
+    let max;
+    
+    max = (x > y) ? x : y;
+    
+    console.log(max); <div class="code2">      // Outputs: 20</div></code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+<p>In this example, the ternary operator checks whether x is greater than y. If it is, max is assigned the value of x; otherwise, it is assigned the value of y.
+<br>
+    The ternary operator can be a useful and concise way to write simple if-else statements, but it can become difficult to read and understand when used for more complex statements or nested inside other expressions. In these cases, it may be better to use a regular if-else statement instead.</p>
+
+<h1 class="head2">For Loops</h1>
+<p>For loops are a common control flow structure in programming that allows you to repeat a block of code a specific number of times. In JavaScript, there are three types of for loops: the standard for loop, the for-in loop, and the for-of loop.</p>
+<h1 class="head3">Standard for loop</h1>
+<p>The standard for loop has the following syntax:</p>
+<div class="code"><pre id="code4"><code>    for (initialization; condition; increment/decrement) {<div class="code2">      // code to be executed</div>   }</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<p>The initialization the statement is executed before the loop starts and is typically used to initialize a counter variable. The condition is checked at the beginning of each iteration and if it is true, the loop continues. If it is false, the loop exits. The increment/decrement statement is executed at the end of each iteration and is used to update the counter variable.<br>
+
+    Here's an example of a standard for loop that counts from 1 to 10:</p>
+
+<div class="code"><pre id="code5"><code>    for (let i = 1; i <= 10; i++) {
+       console.log(i);
+    }
+  </code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+<p>This loop will print the numbers 1 through 10 to the console.</p>
+
+<h1 class="head3">For-in loop</h1>
+<p>The for-in loop is used to iterate over the properties of an object. It has the following syntax:</p>
+
+<div class="code"><pre id="code6"><code>    for (variable in object) {<div class="code2">       // code to be executed</div>    }</code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<p>The variable is assigned the name of each property in the object as the loop iterates over them.<br>
+
+    Here's an example of a for-in loop that iterates over the properties of an object:</p>
+
+<div class="code"><pre id="code7"><code>    let person = {
+    name: "Sumit",
+    age: 18,
+    job: "developer"
+  };
+  
+  for (let key in person) {
+    console.log(key + ": " + person[key]);
+  }
+  </code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code7">Copy</button></div>
+<p>This loop will print the following to the console:</p>
+
+<div class="code"><pre id="code8"><code>    name: John
+    age: 30
+    job: developer
+    </code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code8">Copy</button></div>
+
+<h1 class="head3">For-of loop</h1>
+<p>The for-of loop is used to iterate over the values of an iterable object, such as an array or a string. It has the following syntax:</p>
+
+<div class="code"><pre id="code9"><code>    for (variable of object) {<div class="code2">       // code to be executed</div>    }</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code9">Copy</button></div>
+<p>The variable is assigned the value of each element in the object as the loop iterates over them.<br>
+
+    Here's an example of a for-of loop that iterates over the elements of an array:</p>
+    <div class="code"><pre id="code9"><code>    let numbers = [1, 2, 3, 4, 5];
+          for (let number of numbers) {
+          console.log(number);
+        }</code></pre></div>
+
+    <div class="copytext"><button class="copy-btn" data-code="code9">Copy</button></div>
+
+    <p>This loop will print the numbers 1 through 5 to the console.<br>
+
+        For loops are a powerful tool in JavaScript and can be used to perform a variety of tasks, such as iterating over arrays and objects, repeating a block of code a specific number of times, and more. With the three types of for loops available in JavaScript, you can choose the one that best fits your needs and use it to write more efficient and effective code.</p>
+
+
+    <div class="next">
+
+        <a href="46.jsifelse.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="46.jsifelse.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="48.jswhile.html" class="btn">Next</a></button>
+        <a href="48.jswhile.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="41.jsintro.html" class="page">JS Introduction</a></li>
+                <li><a href="42.jsnodeinstall.html" class="page">Node.Js Installation</a></li>
+                <li><a href="43.jsvariables.html" class="page">Variable</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Primitives & Objects</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Operators and Expressions</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="45.var-let-const.html" class="page">var vs let vs const</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else conditionals</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else ladder</a></li>
+                <li><a href="47.switchternary.html" class="page">Switch case</a></li>
+                <li><a href="47.switchternary.html" class="page">Ternary Operator</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="47.switchternary.html" class="page">For Loops</a></li>
+                <li><a href="48.jswhile.html" class="page">While Loop</a></li>
+                <li><a href="48.jswhile.html" class="page">Functions</a></li>
+                <li><a href="49.jsstring.html" class="page">Strings</a></li>
+                <li><a href="50.jsarray.html" class="page">Array</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="51.jsmap.html" class="page">Map</a></li>
+                <li><a href="51.jsmap.html" class="page">Filter</a></li>
+                <li><a href="51.jsmap.html" class="page">Reduce</a></li>
+                <li><a href="52.jsmath.html" class="page">Math</a></li>
+                <li><a href="52.jsmath.html" class="page">number</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="52.jsmath.html" class="page">Boolean</a></li>
+                <li><a href="53.jsobject.html" class="page">Objects</a></li>
+                <li><a href="54.js.getelement.html" class="page">get element by</a></li>
+                <li><a href="55.innerouter.html" class="page">Inner Html</a></li>
+                <li><a href="55.innerouter.html" class="page">Outer Html</a></li>
+
+
+            </ul>
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                </li>
+                <li class="social"><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

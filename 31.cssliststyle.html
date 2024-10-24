@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<h1 class="head1">CSS List Styles</h1>
+<p>Lists are a common element in web design used to prevent content from being un-organized. CSS allows you to style lists to match the design aesthetic and improve the readability of the web page.</p>
+
+<h1 class="head2">Unordered list styling</h1>
+<p>To style unordered lists (bulleted lists), we can change the list item marker.</p>
+
+<div class="code"><pre id="code1">  ul {
+      list-style-type: value;
+  }</pre></div>
+  <div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+<p>The value can be</p>
+<ul class="para">
+    <li><b>disk</b>: (default) - Filled circle marker</li>
+    <li><b>circle</b>: hollow circle marker</li>
+    <li><b>square</b>: a filled square marker</li>
+    <li><b>none</b>: No marker (remove bullets)</li>
+</ul>
+
+<p>Example:</p>
+
+<div class="code"><pre id="code2">
+    &lt;head&gt;
+        &lt;style&gt;
+            .ul1 {
+                list-style-type: disc;
+            }
+            .ul2 {
+                list-style-type: circle;
+            }
+            .ul3 {
+                list-style-type: square;
+            }
+            .ul4 {
+                list-style-type: none;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;ul class="ul1"&gt;
+            &lt;li&gt;Hello world&lt;/li&gt;
+            &lt;li&gt;This is ul1&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="ul2"&gt;
+            &lt;li&gt;Hello world&lt;/li&gt;
+            &lt;li&gt;This is ul2&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="ul3"&gt;
+            &lt;li&gt;Hello world&lt;/li&gt;
+            &lt;li&gt;This is ul3&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="ul4"&gt;
+            &lt;li>Hello world&lt;/li&gt;
+            &lt;li>This is ul4&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+<div class="para">
+    <h1 class="head3">Output:</h1>
+    <head>
+    <style>
+        .ul1 {
+            list-style-type: disc;
+        }
+        .ul2 {
+            list-style-type: circle;
+        }
+        .ul3 {
+            list-style-type: square;
+        }
+        .ul4 {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li>Hello world</li>
+        <li>This is ul1</li>
+    </ul>
+    <ul class="ul2">
+        <li>Hello world</li>
+        <li>This is ul2</li>
+    </ul>
+    <ul class="ul3">
+        <li>Hello world</li>
+        <li>This is ul3</li>
+    </ul>
+    <ul class="ul4">
+        <li>Hello world</li>
+        <li>This is ul4</li>
+    </ul>
+</body>
+</html></div>
+
+<h1 class="head2">Ordered Lists Styling</h1>
+<p>For ordered lists (numbered lists), we can cusromize the list item numbering.</p>
+<div class="code"><pre id="code3">  ol {
+    list-style-type: value;
+  }
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+<ol>
+    <li><b>decimal</b>: (default) - Decimal numbers (1, 2, 3, etc.)</li>
+    <li><b>decimal-leading-zero</b>: Decimal numbers with leading zeros (01, 02, 03, etc.)</li>
+    <li><b>lower-roman</b>: lowercase Roman numbers (i, ii, iii,...)</li>
+    <li><b>upper-roman</b>: uppercase Roman numbers (I, II, III,...)</li>
+    <li><b>lower-alpha</b>: lowercase alphabetical letters (a, b, c, etc.)</li>
+    <li><b>upper-aplha</b>: uppercase alphabetical letters (A, B, C, etc.)</li>
+</ol>
+<p>Example:</p>
+
+<div class="code"><pre id="code4">
+    &lt;html lang="en">
+    &lt;head>
+    &lt;title>CWH&lt;/title>
+    &lt;style>
+        .ul1 {
+            list-style-type: decimal;
+        }
+        .ul2 {
+            list-style-type: decimal-leading-zero;
+        }
+        .ul3 {
+            list-style-type: lower-roman;
+        }
+        .ul4 {
+            list-style-type: upper-roman;
+        }
+        .ul5 {
+            list-style-type: lower-alpha;
+        }
+        .ul6 {
+            list-style-type: upper-alpha;
+        }
+    &lt;/style>
+&lt;/head>
+&lt;body>
+    &lt;ul class="ul1">
+        &lt;li>This is style decimal&lt;/li>
+    &lt;/ul>
+    &lt;ul class="ul2">
+        &lt;li>This is style list-style-type&lt;/li>
+    &lt;/ul>
+    &lt;ul class="ul3">
+        &lt;li>This is lstyle lower-roman&lt;/li>
+    &lt;/ul>
+    &lt;ul class="ul4">
+        &lt;li>This is style upper-roman&lt;/li>
+    &lt;/ul>
+    &lt;ul class="ul5">
+        &lt;li>This is lower-alpha&lt;/li>
+    &lt;/ul>
+    &lt;ul class="ul6">
+        &lt;li>This is upper-alpha&lt;/li>
+    &lt;/ul>
+&lt;/body>
+&lt;/html>
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+<div class="para">
+    <h1 class="head3">Output:</h1>
+    <html lang="en">
+<head>
+    <title>List-style</title>
+    <style>
+        .ul1 {
+            list-style-type: decimal;
+        }
+        .ul2 {
+            list-style-type: decimal-leading-zero;
+        }
+        .ul3 {
+            list-style-type: lower-roman;
+        }
+        .ul4 {
+            list-style-type: upper-roman;
+        }
+        .ul5 {
+            list-style-type: lower-alpha;
+        }
+        .ul6 {
+            list-style-type: upper-alpha;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li>This is style decimal</li>
+    </ul>
+    <ul class="ul2">
+        <li>This is style list-style-type</li>
+    </ul>
+    <ul class="ul3">
+        <li>This is lstyle lower-roman</li>
+    </ul>
+    <ul class="ul4">
+        <li>This is style upper-roman</li>
+    </ul>
+    <ul class="ul5">
+        <li>This is lower-alpha</li>
+    </ul>
+    <ul class="ul6">
+        <li>This is upper-alpha</li>
+    </ul>
+</body>
+</html>
+</div>
+
+<h1 class="head2">List-style position</h1>
+<p>The 'list-style-position' property determines where the list markers (bullets or numbers) are placed in relation to the content.<br>
+It has two values:</p>
+
+<ul class="para">
+    <li><b>inside</b>: (default) List markers are inside the content's box. This is the default behaviour.</li>
+    <li><b>outside</b>: List markers are outside the content's box, typically to the left of the content, creating a hanging indent effect.<br>Example:</li>
+</ul>
+
+<div class="code"><pre id="code6">
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            .ul1 {
+                list-style-position: inside;
+            }
+            .ul2 {
+                list-style-position: outside;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;ul class="ul1"&gt;
+            &lt;li&gt;list style position : inside&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="ul2"&gt;
+            &lt;li&gt;list style position : outside&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<h1 class="head2">Removing the default list styles</h1>
+<p>To remove default list styles (bullets or numbers), set the 'list-style' property to 'none'.<br>Example:</p>
+
+<div class="code"><pre id="code7">
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .ul1 {
+            list-style: circle;
+        }
+        .ul2 {
+            list-style: none;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;list style :circle&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul2"&gt;
+        &lt;li&gt;list style :none&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</div>
+<div class="copytext"><button class="copy-btn" data-code="code7">Copy</button></div>
+
+<h1 class="head2">Custom List Style</h1>
+<p>To set a custom list style, set the 'list-style-type' to your new required custom style.<br>Example:</p>
+
+<div class="code"><pre id="code8">
+    &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .ul1 {
+            list-style-type: "😍";
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;This is Custom list style&lt;/li&gt;
+        &lt;li&gt;list-style-type&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+
+
+
+
+
+
+<div class="next">
+
+        <a href="30.csshovercursor.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="30.csshovercursor.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="32.cssother.html" class="btn">Next</a></button>
+        <a href="32.cssother.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="head2">CSS Borders</h1>
+    <p>CSS borders help define the visual boundaries of HTML elements. It can be text, div, p, h1, etc.
+
+        <br>The following are the different properties of a CSS border:
+    </p>
+
+    <h1 class="head3">Border Style</h1>
+    <p>Border styles define the style of the border.<br>
+
+        There are various types of border styles; consider the code snippet:</p>
+
+    <div class="code">
+        <pre id="code1">  &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+        .none {
+            border-style: none;
+        }
+        .hidden {
+            border-style: hidden;
+        }
+        .dotted {
+            border-style: dotted;
+        }
+        .dashed {
+            border-style: dashed;
+        }
+        .solid {
+            border-style: solid;
+        }
+        .double {
+            border-style: double;
+        }
+        .groove {
+            border-style: groove;
+        }
+        .ridge {
+            border-style: ridge;
+        }
+        .inset {
+            border-style: inset;
+        }
+        .outset {
+            border-style: outset;
+        }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class="none"&gt;no border&lt;/p&gt;
+    &lt;p class="hidden"&gt;Hidden Border&lt;/p&gt;
+    &lt;p class="dotted"&gt;Dotted Border&lt;/p&gt;
+    &lt;p class="dashed"&gt;Dashed Border&lt;/p&gt;
+    &lt;p class="solid"&gt;Solid border&lt;/p&gt;
+    &lt;p class="double"&gt;Double Border&lt;/p&gt;
+    &lt;p class="groove"&gt;Groove border&lt;/p&gt;
+    &lt;p class="ridge"&gt;ridge border&lt;/p&gt;
+    &lt;p class="inset"&gt;inset border&lt;/p&gt;
+    &lt;p class="outset"&gt;Outset Border&lt;/p&gt;
+  &lt;/body&gt;
+ &lt;/html&gt;</pre>
+    </div>
+    <div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+<h1 class="head3">Output:</h1>
+    <div>
+        <html lang="en">
+<head>
+    <style>
+        .none {
+            border-style: none;
+        }
+        .hidden {
+            border-style: hidden;
+        }
+        .dotted {
+            border-style: dotted;
+        }
+        .dashed {
+            border-style: dashed;
+        }
+        .solid {
+            border-style: solid;
+        }
+        .double {
+            border-style: double;
+        }
+        .groove {
+            border-style: groove;
+        }
+        .ridge {
+            border-style: ridge;
+        }
+        .inset {
+            border-style: inset;
+        }
+        .outset {
+            border-style: outset;
+        }
+    </style>
+</head>
+<body>
+    <p class="none">no border</p>
+    <p class="hidden">Hidden Border</p>
+    <p class="dotted">Dotted Border</p>
+    <p class="dashed">Dashed Border</p>
+    <p class="solid">Solid border</p>
+    <p class="double">Double Border</p>
+    <p class="groove">Groove border</p>
+    <p class="ridge">ridge border</p>
+    <p class="inset">inset border</p>
+    <p class="outset">Outset Border</p>
+</body>
+</html>
+    </div>
+
+<h1 class="head3">Border Color</h1>
+<p>The border color property sets the colour of the border. We can use colourname, hex, rgb, or hsl to set the color.<br>
+If you are not familiar with CSS colours, then follow the <a href="21.csscolor.html">CSS Color</a> Tutorial.</p>
+
+<div class="code">
+    <pre id="code2">  &lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+        .dotted {
+            border-style: dotted;
+            color: purple;
+        }
+        .dashed {
+            border-style: dashed;
+            border-color: #FF0000;
+                }
+         .solid {
+            border-style: solid;
+            border-color: rgb(100, 233, 12);
+         }
+         .double {
+            border-style: double;
+            border-color: hsl(10, 50, 30);
+         }
+      &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class="dotted"&gt;Dotted Border&lt;/p&gt;
+    &lt;p class="dashed"&gt;Dashed Border&lt;/p&gt;
+    &lt;p class="solid"&gt;Solid border&lt;/p&gt;
+    &lt;p class="double"&gt;Double Border&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</pre>
+</div>
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<html lang="en">
+<head>
+    <style>
+        .dotted {
+            border-style: dotted;
+            color: purple;
+        }
+        .dashed {
+            border-style: dashed;
+            border-color: #FF0000;
+        }
+        .solid {
+            border-style: solid;
+            border-color: rgb(100, 233, 12);
+        }
+        .double {
+            border-style: double;
+            border-color: hsl(10, 50, 30);
+        }
+    </style>
+</head>
+<body>
+    <p class="dotted">Dotted Border</p>
+    <p class="dashed">Dashed Border</p>
+    <p class="solid">Solid border</p>
+    <p class="double">Double Border</p>
+</body>
+</html>
+
+<h1 class="head3">Border Width</h1>
+<p>Specifies the width of the border. Sets the width of the border in pixels(px), or there are values like medium, thin, and thick to set the border width.</p>
+
+
+<div class="code">
+    <pre id="code3">&lt;html lang="en"&gt;
+
+        &lt;head&gt;
+            &lt;style&gt;
+                .solid1 {
+                    border-width: 5px;
+        
+                    border-style: solid;
+                    border-color: red;
+                }
+                .solid2 {
+                    border-width: thin; /* thin || medium || thick */
+        
+                    border-style: solid;
+                    border-color: #FF0000;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p class="solid1"&gt;Solid border 1&lt;/p&gt;
+            &lt;p class="solid2"&gt;Solid border 2&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</pre>
+</div>
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<h1 class="head3">Output:</h1>
+<html lang="en">
+
+<head>
+    <style>
+        .solid1 {
+            border-width: 5px;
+
+            border-style: solid;
+            border-color: red;
+        }
+        .solid2 {
+            border-width: thin; /* thin || medium || thick */
+
+            border-style: solid;
+            border-color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <p class="solid1">Solid border 1</p>
+    <p class="solid2">Solid border 2</p>
+</body>
+</html>
+
+<h1 class="head3">Border Radius</h1>
+<p>Border radius helps create rounded borders for elements like buttons or images.</p>
+
+<div class="code"><pre id="code4">  &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+            .solid1 {
+                border-radius: 20px;
+    
+                border-style: solid;
+                border-color: red;
+            }
+            .solid2 {
+                border-radius: 25%;
+    
+                border-style: solid;
+                border-color: #FF0000;
+            }
+        &lt;/style>
+    &lt;/head>
+    
+    &lt;body&gt;
+        &lt;p class="solid1"&gt;Solid border 1&lt;/p&gt;
+        &lt;p class="solid2"&gt;Solid&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+
+<h1 class="head3">Output:</h1>
+<html lang="en">
+<head>
+    <style>
+        .solid1 {
+            border-radius: 20px;
+
+            border-style: solid;
+            border-color: red;
+        }
+        .solid2 {
+            border-radius: 50%;
+
+            border-style: solid;
+            border-color: #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="solid1">Solid border 1</p>
+    <p class="solid2">Solid</p>
+</body>
+</html>
+
+<p>We can also set border-radius to each individual edge (specific corners), such as top left, bottom right, top right, and bottom left.</p>
+
+<h1 class="head3">Set the border of individual corners</h1>
+
+<div class="code"><pre id="code5"><div class="code2"> &lt;------------Syntax----------&gt;</div>  selector {
+    border-radius: 10px 5px 15px 35px ;
+   }    <div class="code2">   /* border-radius: top-left top-right bottom-right bottom-left ; */</div>
+   selector {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 35px;
+  }</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+<h1 class="head3">Border Collapse</h1>
+<p>While working with tables, border-collapse helps to control how table borders interact with each other.<br>
+There are two properties of border-collapse.</p>
+
+<ol>
+    <li>collapse</li>
+    <li>separate</li>
+</ol>
+<div class="code"><pre id="code6">  selector {
+    border-collapse: collapse;
+  }
+  selector {
+    border-collapse: separate;
+  }
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<h1 class="head3">Border Spacing</h1>
+<p>While working with tables, border-spacing helps define the space between the borders of adjacent table cells.</p>
+
+<div class="code"><pre id="code7">  selector {
+    border-spacing: 5px;
+    }
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code7">Copy</button></div>
+
+<h1 class="head3">Shorthand</h1>
+<p>Border shorthand takes three properties: width, style, and color.</p>
+
+<div class="code"><pre id="code8"><div class="code2">&lt;---------------Syntax-----------&gt;</div>  selector{
+       border: width style color;
+    }
+<div class="code2">&lt;---------------Example-----------&gt;</div>
+    &lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+        p {
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is Border Shorthand&lt;/p&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;
+</pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code8">Copy</button></div>
+
+
+
+
+
+<div class="next">
+
+        <a href="22.cssbackground.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="22.cssbackground.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="24.cssimage.html" class="btn">Next</a></button>
+        <a href="24.cssimage.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="18.cssway.html" class="page">Way to add Css</a></li>
+                <li><a href="19.cssselector.html" class="page">CSS Selectors</a></li>
+                <li><a href="20.cssSpecificity.html" class="page">CSS Specificity</a></li>
+                <li><a href="21.csscolor.html" class="page">CSS Color</a></li>
+                <li><a href="22.cssbackground.html" class="page">CSS Background</a></li>
+                <li><a href="23.cssborder.html" class="page">CSS Border</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="24.cssimage.html" class="page">CSS Image</a></li>
+                <li><a href="25.cssvideo.html" class="page">CSS Video</a></li>
+                <li><a href="26.cssfont.html" class="page">CSS Fonts</a></li>
+                <li><a href="27.csstext.html" class="page">CSS Text</a></li>
+                <li><a href="28.boxmodel.html" class="page">CSS Box Model</a></li>
+                <li><a href="29.padmar.html" class="page">CSS Padding </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="29.padmar.html" class="page">CSS Margin</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Hover</a></li>
+                <li><a href="30.csshovercursor.html" class="page">CSS Cursor</a></li>
+                <li><a href="31.cssliststyle.html" class="page">CSS List-Style</a></li>
+                <li><a href="32.cssother.html" class="page">CSS Combinators</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Overflow
+                    </a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="33.overfloat.html" class="page">CSS Float</a></li>
+                <li><a href="33.overfloat.html" class="page">CSS Size</a></li>
+                <li><a href="34.cssposition.html" class="page">CSS Position</a></li>
+                <li><a href="35.cssdisplay.html" class="page">CSS Display</a></li>
+                <li><a href="36.cssflexbox.html" class="page">CSS Flexbox</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Transform</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="37.cssadvance.html" class="page">CSS Transition</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Border Image</a></li>
+                <li><a href="37.cssadvance.html" class="page">CSS Gradient</a></li>
+                <li><a href="38.cssshadow.html" class="page">CSS Shadow</a></li>
+                <li><a href="39.cssanimation.html" class="page">CSS Animation</a></li>
+                <li><a href="40.cssextra.html" class="page">CSS Tooltip Text</a></li>
+                
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                        <p class="media">Instagram</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        <p class="media">Youtube</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                    <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <p class="media">Linkedin</p>
+                    </span></a>
+                </li>
+                <li class="social"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq" style="text-decoration: none;"  target="_blank">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p class="media">sumitkumar042006@gmail.com</p>
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+
+<h1 class="head2">innerHTML</h1>
+<p>The innerHTML property is a part of the JavaScript HTMLElement object and it allows developers to access and manipulate the HTML content of an element. The innerHTML property returns the content between the opening and closing tags of an element, as a string of HTML.<br>
+
+    For example, consider the following HTML code:</p>
+
+<div class="code"><pre id="code1"><code>   &lt;div id="myDiv"&gt;
+      &lt;p&gt;This is my paragraph&lt;/p&gt;
+      &lt;p&gt;This is my paragraph&lt;/p&gt;
+   &lt;/div&gt;</code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+
+<p>The following JavaScript code can be used to access the content of the &lt;div&gt; element with the ID "myDiv" and change its text:</p>
+
+<div class="code"><pre id="code2"><code>   let myDiv = document.getElementById("myDiv");
+    myDiv.innerHTML = "&lt;p&gt;This is my new text&lt;/p&gt;";</code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<p>The innerHTML property is a powerful tool for manipulating the HTML content of an element. Developers can use it to add, remove, or replace elements, as well as change the text and attributes of existing elements.<br>
+
+    It's important to note that the innerHTML property can be used to insert any valid HTML code, including scripts and event handlers. This can be a powerful feature, but it can also pose a security risk if the HTML is not properly sanitized. Also, it's important to note that when you set the innerHTML property, the content is completely replaced, any previous content, event handlers, and other properties are lost.<br>
+    
+    In conclusion, the innerHTML property is a powerful tool for manipulating the HTML content of an element in JavaScript. Understanding how to use this property is essential for creating dynamic and interactive web pages, as it allows developers to easily add, remove, or replace elements, as well as change the text and attributes of existing elements. However, it's important to keep in mind that this property can pose a security risk if the HTML is not properly sanitized and also, it completely replaces the content when set.</p>
+
+
+    <h1 class="head2">outerHTML</h1>
+<p>The outerHTML property is a part of the JavaScript HTMLElement object and it allows developers to access and manipulate the entire HTML of an element, including the element's own tags. The outerHTML property returns the entire HTML of an element, as a string of HTML.<br>
+
+    For example, consider the following HTML code:</p>
+
+    <div class="code"><pre id="code3"><code>   &lt;div id="myDiv"&gt;
+        &lt;p&gt;This is my paragraph&lt;/p&gt;
+        &lt;p&gt;This is my paragraph&lt;/p&gt;
+    &lt;/div&gt;</code></pre></div>
+    <div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+    <p>The following JavaScript code can be used to access the &lt;div&gt; element with the ID "myDiv" and change its content:</p>
+
+    <div class="code"><pre id="code4"><code>   let myDiv = document.getElementById("myDiv");
+        myDiv.outerHTML = "&lt;div&gt;&lt;p&gt;This is my new text&lt;/p&gt;&lt;/div&gt;";</code></pre></div>
+    <div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<p>The outerHTML property is a powerful tool for manipulating the entire HTML of an element. Developers can use it to add, remove, or replace elements, as well as change the text and attributes of existing elements. The main difference between outerHTML and innerHTML is that outerHTML allows you to change the entire element, including its own tags, whereas innerHTML only allows you to change the content within the element.<br>
+
+    It's important to note that the outerHTML property can be used to insert any valid HTML code, including scripts and event handlers. This can be a powerful feature, but it can also pose a security risk if the HTML is not properly sanitized. Also, it's important to note that when you set the outerHTML property, the entire element is replaced, any previous content, event handlers, and other properties are lost.<br>
+    
+    In conclusion, the outerHTML property is a powerful tool for manipulating the entire HTML of an element in JavaScript. Understanding how to use this property is essential for creating dynamic and interactive web pages, as it allows developers to easily add, remove, or replace elements, as well as change the text and attributes of existing elements. However, it's important to keep in mind that this property can pose a security risk if the HTML is not properly sanitized and also, it completely replaces the entire element when set.</p>
+
+
+
+
+
+    <div class="next">
+
+        <a href="54.js.getelement.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="54.js.getelement.html" class="btn">Previous</a></button>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="41.jsintro.html" class="page">JS Introduction</a></li>
+                <li><a href="42.jsnodeinstall.html" class="page">Node.Js Installation</a></li>
+                <li><a href="43.jsvariables.html" class="page">Variable</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Primitives & Objects</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Operators and Expressions</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="45.var-let-const.html" class="page">var vs let vs const</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else conditionals</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else ladder</a></li>
+                <li><a href="47.switchternary.html" class="page">Switch case</a></li>
+                <li><a href="47.switchternary.html" class="page">Ternary Operator</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="47.switchternary.html" class="page">For Loops</a></li>
+                <li><a href="48.jswhile.html" class="page">While Loop</a></li>
+                <li><a href="48.jswhile.html" class="page">Functions</a></li>
+                <li><a href="49.jsstring.html" class="page">Strings</a></li>
+                <li><a href="50.jsarray.html" class="page">Array</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="51.jsmap.html" class="page">Map</a></li>
+                <li><a href="51.jsmap.html" class="page">Filter</a></li>
+                <li><a href="51.jsmap.html" class="page">Reduce</a></li>
+                <li><a href="52.jsmath.html" class="page">Math</a></li>
+                <li><a href="52.jsmath.html" class="page">number</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="52.jsmath.html" class="page">Boolean</a></li>
+                <li><a href="53.jsobject.html" class="page">Objects</a></li>
+                <li><a href="54.js.getelement.html" class="page">get element by</a></li>
+                <li><a href="55.innerouter.html" class="page">Inner Html</a></li>
+                <li><a href="55.innerouter.html" class="page">Outer Html</a></li>
+
+
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                </li>
+                <li class="social"><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+<h1 class="head2">Math Number and Boolean</h1>
+<h1 class="head3">Math</h1>
+<p>The JavaScript Math object is a built-in object that provides a variety of mathematical functions and constants. It can be used to perform mathematical operations such as trigonometry, logarithms, and random number generation.<br>
+
+    One of the most commonly used functions in the Math object is the Math.random() function, which generates a random number between 0 (inclusive) and 1 (exclusive). This function can be used to generate random numbers for various purposes such as games, simulations, and other applications.</p>
+
+<div class="code"><pre id="code1"><code>    console.log(Math.random());<div class="code2">    // Output: a random number between 0 and 1 (e.g. 0.3456)</div></code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<p>You can also use the Math.floor() function to round a number down to the nearest integer.</p>
+
+<div class="code"><pre id="code2"><code>    console.log(Math.floor(3.8));<div class="code2">    // Output: 3</div></code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<p>The Math.ceil() function rounds a number up to the nearest integer.</p>
+
+
+<div class="code"><pre id="code3"><code>    console.log(Math.ceil(3.2));<div class="code2">    // Output: 4</div></code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<p>Another useful function of Math object is Math.max() and Math.min() which are used to find the maximum and minimum values in a set of numbers respectively.</p>
+
+
+<div class="code"><pre id="code4"><code>    console.log(Math.max(3,5,7,9));<div class="code2">    // Output: 9</div>    console.log(Math.min(3,5,7,9));<div class="code2">    // Output: 3</div>
+</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<p>Another useful function of Math object is Math.max() and Math.min() which are used to find the maximum and minimum values in a set of numbers respectively.</p>
+
+
+<div class="code"><pre id="code5"><code>    console.log(Math.PI);<div class="code2">    // Output: 3.141592653589793</div>    console.log(Math.E);<div class="code2">    // Output: 2.718281828459045</div>
+</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+<p>In this way, you can use the Math object in JavaScript to perform mathematical operations, generate random numbers, and access mathematical constants. It is a powerful tool that can be used to add more functionality to your JavaScript programs and make them more interactive and dynamic.</p>
+
+
+<h1 class="head3">Number</h1>
+
+<p>The JavaScript Number object is a built-in object that provides a number of properties and methods for working with numeric values. The Number object can be used to convert a value to a number, perform mathematical operations, and format numbers for display.<br>
+
+    One of the most commonly used methods of the Number object is the Number() function, which can be used to convert a value to a number. This function can be used to convert strings, booleans, and other types of values to numbers.</p>
+
+<div class="code"><pre id="code6"><code>    console.log(Number("3.14"));<div class="code2">    // Output: 3.14</div>    console.log(Number(true));<div class="code2">    // Output: 1</div>
+</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<p>You can also use the parseInt() and parseFloat() methods to convert strings to integers and floating-point numbers, respectively.</p>
+
+
+<div class="code"><pre id="code7"><code>    console.log(parseInt("3"));<div class="code2">    // Output: 3</div>    console.log(parseFloat("3.14"));<div class="code2">    // Output: 3.14</div>
+</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code7">Copy</button></div>
+
+<p>The Number object also provides several properties that can be used to access the maximum and minimum values that can be represented by a number in JavaScript. These properties are Number.MAX_VALUE and Number.MIN_VALUE.</p>
+
+
+<div class="code"><pre id="code8"><code>    console.log(Number.MAX_VALUE);<div class="code2">    // Output: 1.7976931348623157e+308</div>    console.log(Number.MIN_VALUE);<div class="code2">    // Output: 5e-324</div>
+</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code8">Copy</button></div>
+
+<p>Another useful property of the Number object is Number.POSITIVE_INFINITY and <br>Number.NEGATIVE_INFINITY which represents the positive and negative infinity respectively.</p>
+
+
+<div class="code"><pre id="code8"><code>    console.log(1 / 0);<div class="code2">    // Output: Infinity</div>    console.log(-1 / 0);<div class="code2">    // Output: -Infinity</div>
+</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code8">Copy</button></div>
+
+<p>The Number object also provides several methods for formatting numbers for display, such as the toFixed() method, which can be used to format a number with a specific number of decimal places.</p>
+
+
+<div class="code"><pre id="code9"><code>    console.log(1 / 0);<div class="code2">    // Output: Infinity</div>    console.log(-1 / 0);<div class="code2">    // Output: -Infinity</div>
+</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code9">Copy</button></div>
+
+<p>The Number object also provides several methods for formatting numbers for display, such as the toFixed() method, which can be used to format a number with a specific number of decimal places.</p>
+
+
+<div class="code"><pre id="code10"><code>    console.log((3.1415926535897932384626433832795).toFixed(2));<div class="code2">    // Output: "3.14"</div> </code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code10">Copy</button></div>
+
+<p>In this way, you can use the Number object in JavaScript to convert values to numbers, perform mathematical operations, and format numbers for display. It is a powerful tool that can be used to add more functionality to your JavaScript programs and make them more interactive and dynamic.</p>
+
+<h1 class="head3">Boolean</h1>
+
+<p>The JavaScript Boolean object is a built-in object that provides a way to work with Boolean (true/false) values in your scripts. The Boolean object can be used to create Boolean values and perform logical operations, such as and, or, and not.
+<br>
+    A boolean value can be created by using the Boolean() function or by assigning a value of true or false to a variable.</p>
+
+
+    <div class="code"><pre id="code11"><code>    var isTrue = Boolean(1);
+        console.log(isTrue);<div class="code2">    // Output: true</div>    var isFalse = Boolean(0);
+        console.log(isFalse);<div class="code2">    // Output: false</div>
+    </code></pre></div>
+    
+    <div class="copytext"><button class="copy-btn" data-code="code11">Copy</button></div>
+    
+    <p>You can also use the logical && operator to check if both expressions are true and the || operator to check if at least one of the expressions is true.</p>
+
+
+    <div class="code"><pre id="code12"><code>    var x = true;
+    var y = false;
+    console.log(x && y);<div class="code2">       // Output: false</div>    console.log(x || y);<div class="code2">       // Output: true</div>
+    </code></pre></div>
+    
+    <div class="copytext"><button class="copy-btn" data-code="code12">Copy</button></div>
+<p>You can also use the ! operator to invert a boolean value.</p>
+
+
+
+<div class="code"><pre id="code13"><code>    console.log(!x);<div class="code2">        // Output: false</div>    console.log(!y);<div class="code2">        // Output: true</div>
+    </code></pre></div>
+    
+    <div class="copytext"><button class="copy-btn" data-code="code13">Copy</button></div>
+
+<p>The Boolean object also provides a valueOf() method that returns the primitive value of the Boolean object</p>
+
+<div class="code"><pre id="code14"><code>    var b = new Boolean(true);
+    console.log(b.valueOf());<div class="code2">        // Output: true</div></code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code14">Copy</button></div>
+
+<p>In this way, you can use the Boolean object in JavaScript to work with Boolean values, perform logical operations, and invert Boolean values. It is a fundamental part of programming and helps to control the flow of the program.</p>
+
+
+    <div class="next">
+
+        <a href="51.jsmap.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="51.jsmap.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="53.jsobject.html" class="btn">Next</a></button>
+        <a href="53.jsobject.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="41.jsintro.html" class="page">JS Introduction</a></li>
+                <li><a href="42.jsnodeinstall.html" class="page">Node.Js Installation</a></li>
+                <li><a href="43.jsvariables.html" class="page">Variable</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Primitives & Objects</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Operators and Expressions</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="45.var-let-const.html" class="page">var vs let vs const</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else conditionals</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else ladder</a></li>
+                <li><a href="47.switchternary.html" class="page">Switch case</a></li>
+                <li><a href="47.switchternary.html" class="page">Ternary Operator</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="47.switchternary.html" class="page">For Loops</a></li>
+                <li><a href="48.jswhile.html" class="page">While Loop</a></li>
+                <li><a href="48.jswhile.html" class="page">Functions</a></li>
+                <li><a href="49.jsstring.html" class="page">Strings</a></li>
+                <li><a href="50.jsarray.html" class="page">Array</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="51.jsmap.html" class="page">Map</a></li>
+                <li><a href="51.jsmap.html" class="page">Filter</a></li>
+                <li><a href="51.jsmap.html" class="page">Reduce</a></li>
+                <li><a href="52.jsmath.html" class="page">Math</a></li>
+                <li><a href="52.jsmath.html" class="page">number</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="52.jsmath.html" class="page">Boolean</a></li>
+                <li><a href="53.jsobject.html" class="page">Objects</a></li>
+                <li><a href="54.js.getelement.html" class="page">get element by</a></li>
+                <li><a href="55.innerouter.html" class="page">Inner Html</a></li>
+                <li><a href="55.innerouter.html" class="page">Outer Html</a></li>
+
+
+            </ul>
+
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                </li>
+                <li class="social"><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <link rel="stylesheet" href="cssstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navi">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="1.index.html">
+                        <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                        <span class="text">HTML</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="18.cssway.html">
+                        <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                        <span class="text">CSS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="41.jsintro.html">
+                        <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                        <span class="text">JS</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
+                        <span class="text">ABOUT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+
+<h1 class="head2">Window Object</h1>
+
+<p>The JavaScript window object represents the current browser window or tab that is open in a web browser. It is a global object that provides access to various properties and methods related to the browser window.<br>
+
+    One of the most commonly used properties of the window object is the document property, which represents the current web page. This property can be used to access the HTML elements on a page, as well as manipulate them. For example, the following code can be used to change the text of a specific element on a page:</p>
+
+<div class="code"><pre id="code1"><code>    document.getElementById("myElement").innerHTML = "This is my new text";</code></pre></div>
+<div class="copytext"><button class="copy-btn" data-code="code1">Copy</button></div>
+
+<p>Another important property of the window object is the location property, which provides information about the current URL. This property can be used to redirect the user to a different page, as well as retrieve the current URL. For example, the following code can be used to redirect the user to a different page:</p>
+
+<div class="code"><pre id="code2"><code>    window.location.href = "https://www.example.com";</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code2">Copy</button></div>
+
+<p>The window object also provides several methods for displaying dialog boxes, such as alert(), confirm(), and prompt(). These methods can be used to display messages to the user and receive input from the user. For example, the following code can be used to display an alert box with a message:</p>
+
+<div class="code"><pre id="code3"><code>    alert("This is an alert message");</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code3">Copy</button></div>
+
+<p>There are many other properties and methods provided by the window object, such as setTimeout() and setInterval() for scheduling tasks, open() and close() for opening and closing new windows, and scrollTo() for scrolling the window to a specific position.<br>
+
+    It's important to note that window object is also the parent object of the document object and history object.<br>
+    
+    In conclusion, the JavaScript window object provides a powerful set of tools for interacting with the browser window and web page. It can be used to access and manipulate HTML elements, redirect the user to a different page, and display dialog boxes. Understanding how to use the window object is essential for creating interactive and dynamic web pages.</p>
+
+
+<h1 class="head2">History Object</h1>
+
+<p>The JavaScript history object is a part of the window object and provides access to the browser's history. It allows developers to manipulate the browser's history and change the current URL without reloading the page.<br>
+
+    One of the most commonly used methods of the history object is the pushState() method. This method allows developers to add a new entry to the browser's history and change the current URL without reloading the page. For example, the following code can be used to change the current URL to "https://www.example.com" and add an entry to the browser's history:</p>
+
+    <div class="code"><pre id="code4"><code>    history.pushState(null, null, "https://www.example.com"); </code></pre></div>
+
+    <div class="copytext"><button class="copy-btn" data-code="code4">Copy</button></div>
+
+<p>Another important method is the replaceState() method which is similar to pushState() but it replaces the current entry in the history instead of creating a new one.<br>
+
+    It is also possible to navigate through the browser's history using the back() and forward() methods. These methods allow developers to navigate to the previous or next page in the history, respectively. For example, the following code can be used to navigate to the previous page in the history:</p>
+
+
+    <div class="code"><pre id="code5"><code>    history.back();</code></pre></div>
+
+    <div class="copytext"><button class="copy-btn" data-code="code5">Copy</button></div>
+
+    <p>The length property of the history object returns the number of entries in the browser's history. Developers can use this property to check how many pages the user has visited and provide appropriate navigation options.<br>
+
+        It's important to note that the history object is not a perfect solution for all navigation needs and it can only be used to navigate within the same origin. Also, the history object is part of the HTML5 specification and it is not supported in all browsers, so it's important to check the browser compatibility before using it.<br>
+        
+        In conclusion, the JavaScript history object provides a powerful set of tools for manipulating the browser's history and changing the current URL without reloading the page. Understanding how to use the history object is essential for creating single-page applications (SPA) and improving the user experience. However, it's important to keep in mind its limitations and check the browser compatibility before using it.</p>
+
+<h1 class="head2">Navigator Object</h1>
+
+<p>The JavaScript navigator object is a part of the window object and provides information about the browser and the device being used to access the web page. It allows developers to gather information about the browser type, version, and supported features, as well as detect the device's properties such as its screen size, resolution, and online/offline status.<br>
+
+    One of the most commonly used properties of the navigator object is the userAgent property. This property returns a string that represents the browser's user agent. Developers can use this property to detect the browser type and version. For example, the following code can be used to check if the user is using Google Chrome:</p>
+
+
+    <div class="code"><pre id="code6"><code>    if (navigator.userAgent.indexOf("Chrome") !== -1) {
+        console.log("The user is using Google Chrome");
+    }</code></pre></div>
+
+    <div class="copytext"><button class="copy-btn" data-code="code6">Copy</button></div>
+
+<p>Another important property is the onLine property which indicates whether the device is currently connected to the internet or not. This property can be useful for providing offline support or showing an offline message to the user.</p>
+
+
+
+<div class="code"><pre id="code7"><code>    if (!navigator.onLine) {
+    console.log("The device is currently offline");
+   }</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code7">Copy</button></div>
+
+<p>The navigator object also provides several methods for detecting the device's screen properties, such as screen.width and screen.height which returns the screen width and height in pixels. Developers can use these properties to create responsive designs and adjust the layout based on the screen size.</p>
+
+<div class="code"><pre id="code8"><code>    console.log(`The screen width is ${screen.width} pixels and the screen height is ${screen.height} pixels`);</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code8">Copy</button></div>
+<p>The navigator object also provides several methods for detecting the device's Geolocation, such as navigator.geolocation.getCurrentPosition() which returns the position of the device based on its GPS coordinates or the IP address.<br>
+
+    It's important to note that not all properties and methods provided by the navigator object are supported by all browsers and devices. Therefore, it's important to check browser compatibility before using them.<br>
+    
+    In conclusion, the JavaScript navigator object provides a powerful set of tools for gathering information about the browser and the device being used to access the web page. Understanding how to use the navigator object is essential for creating responsive designs and providing offline support, but it's important to keep in mind its limitations and check browser compatibility before using it.</p>
+
+
+
+    <h1 class="head2">Screen Object</h1>
+
+<p>The JavaScript screen object is a part of the window object and provides information about the device's screen properties. It allows developers to gather information about the screen resolution, color depth, and available screen area.
+<br>
+    One of the most commonly used properties of the screen object is the width and height properties. These properties return the width and height of the device's screen in pixels, respectively. Developers can use these properties to create responsive designs and adjust the layout based on the screen size. For example, the following code can be used to log the screen resolution:</p>
+
+
+    <div class="code"><pre id="code9"><code>    console.log(`The screen resolution is ${screen.width}x${screen.height} pixels`);</code></pre></div>
+
+    <div class="copytext"><button class="copy-btn" data-code="code9">Copy</button></div>
+
+    <p>Another important property is the colorDepth property which returns the number of bits used to represent the color of a single pixel. This property can be used to check the color depth of the screen and make sure that images and videos are displayed correctly.</p>
+
+ <div class="code"><pre id="code10"><code>    console.log(`The screen color depth is ${screen.colorDepth} bits`);</code></pre></div>
+
+    <div class="copytext"><button class="copy-btn" data-code="code10">Copy</button></div>
+
+<p>The screen object also provides the availWidth and availHeight properties, which return the width and height of the available screen area, respectively. This means the area available to the browser, not including the taskbar or other system interface elements.</p>
+
+<div class="code"><pre id="code11"><code>    console.log(`The available screen width is ${screen.availWidth} pixels and the available screen height is ${screen.availHeight} pixels`);</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code11">Copy</button></div>
+
+<p>It's important to note that the screen object is a part of the DOM API and it is supported by all modern browsers, but it's important to check for browser compatibility before using it. Also, the screen object properties will return the screen size of the device the browser is running on, and not the size of the window that the browser is running in.<br>
+
+    In conclusion, the JavaScript screen object provides a powerful set of tools for gathering information about the device's screen properties such as resolution, color depth and available screen area. Understanding how to use the screen object is essential for creating responsive designs and adjusting the layout based on the screen size, but it's important to keep in mind its limitations and check browser compatibility before using it.</p>
+
+
+<h1 class="head2">Document Object</h1>
+
+<p>The JavaScript document object is a part of the window object and represents the current web page. It allows developers to access and manipulate the elements of the web page, as well as the Document Object Model (DOM) tree that represents the structure of the web page.<br>
+
+    One of the most commonly used methods of the document object is the getElementById() method. This method allows developers to access a specific element on the web page by its unique ID. For example, the following code can be used to change the text of an element with the ID "myElement":</p>
+
+    <div class="code"><pre id="code12"><code>    document.getElementById("myElement").innerHTML = "This is my new text";</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code12">Copy</button></div>
+
+<p>Another important method is getElementsByClassName() method which returns a live HTMLCollection of elements with the given class name. It can be used to access multiple elements with the same class name.</p>
+
+<div class="code"><pre id="code13"><code>    let elements = document.getElementsByClassName("myClass");
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = "This is my new text";
+    }</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code13">Copy</button></div>
+
+<p>The document object also provides several methods for creating new elements and adding them to the web page, such as createElement() and createTextNode(). For example, the following code can be used to create a new div element and add it to the web page:</p>
+
+
+<div class="code"><pre id="code14"><code>    let newDiv = document.createElement("div");
+    document.body.appendChild(newDiv);</code></pre></div>
+
+<div class="copytext"><button class="copy-btn" data-code="code14">Copy</button></div>
+
+<p>It's important to note that the document object is a part of the DOM API and it is supported by all modern browsers, but it's important to check for browser compatibility before using it.<br>
+
+    In conclusion, the JavaScript document object provides a powerful set of tools for accessing and manipulating the elements of the web page and the Document Object Model (DOM) tree. Understanding how to use the document object is essential for creating dynamic and interactive web pages, but it's important to keep in mind its limitations and check browser compatibility before using it.</p>
+
+
+
+
+
+
+
+
+    <div class="next">
+
+        <a href="52.jsmath.html"> <i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+        <button id="backword"><a href="52.jsmath.html" class="btn">Previous</a></button>
+
+        <button id="forward"><a href="54.js.getelement.html" class="btn">Next</a></button>
+        <a href="54.js.getelement.html">
+            <i class="fa fa-mail-forward" aria-hidden="true"></i></a>
+    </div>
+
+
+    <footer>
+        <nav class="foot">
+            <h1 class="direct">Direct links</h1>
+            <ul class="link">
+                <li><a href="41.jsintro.html" class="page">JS Introduction</a></li>
+                <li><a href="42.jsnodeinstall.html" class="page">Node.Js Installation</a></li>
+                <li><a href="43.jsvariables.html" class="page">Variable</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Primitives & Objects</a></li>
+                <li><a href="44.jsprimitives.html" class="page">Operators and Expressions</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="45.var-let-const.html" class="page">var vs let vs const</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else conditionals</a></li>
+                <li><a href="46.jsifelse.html" class="page">If else ladder</a></li>
+                <li><a href="47.switchternary.html" class="page">Switch case</a></li>
+                <li><a href="47.switchternary.html" class="page">Ternary Operator</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="47.switchternary.html" class="page">For Loops</a></li>
+                <li><a href="48.jswhile.html" class="page">While Loop</a></li>
+                <li><a href="48.jswhile.html" class="page">Functions</a></li>
+                <li><a href="49.jsstring.html" class="page">Strings</a></li>
+                <li><a href="50.jsarray.html" class="page">Array</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="51.jsmap.html" class="page">Map</a></li>
+                <li><a href="51.jsmap.html" class="page">Filter</a></li>
+                <li><a href="51.jsmap.html" class="page">Reduce</a></li>
+                <li><a href="52.jsmath.html" class="page">Math</a></li>
+                <li><a href="52.jsmath.html" class="page">number</a></li>
+            </ul>
+            <ul class="link">
+                <li><a href="52.jsmath.html" class="page">Boolean</a></li>
+                <li><a href="53.jsobject.html" class="page">Objects</a></li>
+                <li><a href="54.js.getelement.html" class="page">get element by</a></li>
+                <li><a href="55.innerouter.html" class="page">Inner Html</a></li>
+                <li><a href="55.innerouter.html" class="page">Outer Html</a></li>
+
+
+            </ul>
+
+            <ul class="links">
+                <h2 class="direct">follow me</h2>
+                <li class="social"><a href="https://www.instagram.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p class="media">Instagram</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://www.youtube.com/channel/UCRbAeJ-Eur1WR9xwISAnvOA"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <p class="media">Youtube</p>
+                        </span></a>
+                </li>
+                <li class="social"><a href="https://in.linkedin.com/" style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <p class="media">Linkedin</p>
+                        </span></a>
+                </li>
+                <li class="social"><a
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZZzNPdBHXwBKcSxwbRZVlvpjtSbsdBnwWMVzfRJKSPhGVFnkgKkhWdQWbvKgHDDCmvkVq"
+                        style="text-decoration: none;" target="_blank">
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p class="media">sumitkumar042006@gmail.com</p>
+                        </span></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+
+        <!-- copy code script -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.copy-btn');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code');
+                    const codeElement = document.getElementById(codeId);
+                    const code = codeElement.textContent;
+
+                    navigator.clipboard.writeText(code).then(() => {
+                        alert('Code copied to clipboard!');
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
